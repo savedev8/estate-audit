@@ -42,7 +42,7 @@ export const ThemeSwitcher = () => {
             <Icon Svg={brightnes} className={cls.Btn} />
           </button>
           <button id="clecel" onClick={openDarkLight} style={{ display: open ? 'inline-block' : 'none' }}>
-            <Icon Svg={dark} />
+            <Icon Svg={dark} className={cls.Btn} />
           </button>
         </div>
         <div className="cs_mode_btn js-mode-type" style={{ right: open ? '0px' : '-120px' }}>

@@ -6,6 +6,8 @@ import Logo_white from "@/shared/assets/img/Logo_white.png";
 import { Link } from "react-router-dom";
 import { AppImage } from "@/shared/ui/AppImage";
 import { HeaderMobileMenu as MobileMenu } from '@/widgets/Header/HeaderMobileMenu';
+import { Icon } from "@/shared/ui/Icon";
+import * as cls from './HeaderOne.module.scss';
 
 interface DataType {
 	id: number;
@@ -230,9 +232,10 @@ export const HeaderOne = () => {
 				<div className="cs_main_header">
 					<div className="container">
 						<div className="cs_main_header_in">
+							{/* НУЖНА СМЕНА ЛОГОТИПА */}
 							<div className="cs_main_header_left">
 								<Link className="cs_site_branding logo-dark" to="/">
-									{/* <AppImage src={logo} alt="Logo" /> */}
+									<Icon Svg={logo} className={cls.DarkBtn} />
 								</Link>
 								<Link className="cs_site_branding logo-white" to="/">
 									<AppImage src={Logo_white} alt="Logo" />

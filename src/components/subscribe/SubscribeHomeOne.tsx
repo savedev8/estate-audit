@@ -1,6 +1,3 @@
-
-
-
 const SubscribeHomeOne = () => {
 
   const handleSuubmit = (e: any) => {
