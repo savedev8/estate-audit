@@ -34,8 +34,7 @@ import brand_thumb_6 from "@/shared/assets/img/partner_14.svg"
 import brand_thumb_7 from "@/shared/assets/img/partner_15.svg"
 import brand_thumb_8 from "@/shared/assets/img/partner_1.svg"
 import brand_thumb_9 from "@/shared/assets/img/partner_3.svg"
-import { AppImage } from '@/shared/ui/AppImage';
-import { FC, SVGProps, VFC } from "react";
+import { FC, SVGProps } from "react";
 import { Icon } from "@/shared/ui/Icon";
 
 
@@ -52,10 +51,9 @@ const brand_thumb_data: DataType = [
 ]
 
 
-const BrandHomeOne = ({ style_2 }: any) => {
+export const BrandHomeOne = ({ style_2 }: any) => {
   return (
     <> 
-      
       {style_2 ?
         <>
           <div className="cs_height_150 cs_height_lg_60"></div>
@@ -119,5 +117,3 @@ const BrandHomeOne = ({ style_2 }: any) => {
     </>
   );
 };
-
-export default BrandHomeOne;

@@ -1,7 +1,8 @@
-import logo from '@/assets/img/logo.svg';
-import { AppImage } from '@/shared/ui/AppImage';
+import logo from '@/shared/assets/img/logo.svg';
+import { Icon } from '@/shared/ui/Icon';
+import * as cls from './BannerAbout.module.scss';
 
-const BannerAbout = () => {
+export const BannerAbout = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -29,7 +30,7 @@ const BannerAbout = () => {
                   </svg>
                 </div>
                 <div className="position-absolute cs_ceneter_text">
-                  <AppImage src={`${logo}`} alt="" />
+                  <Icon Svg={logo} className={cls.DarkBtn} />
                 </div>
               </div>
             </div>
@@ -39,5 +40,3 @@ const BannerAbout = () => {
     </>
   );
 };
-
-export default BannerAbout;

@@ -1,7 +1,7 @@
 import AboutHomeFour from '@/components/about/AboutHomeFour';
 import HeroService from '@/components/hero/HeroService';
 import Service from '@/components/service/Service';
-import Testimonial from '@/components/testimonial/Testimonial';
+import { Testimonial } from '@/components/testimonial/Testimonial';
 
 export const metadata = {
   title: "Service Estate Audit",

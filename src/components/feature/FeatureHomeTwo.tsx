@@ -1,6 +1,3 @@
-
-
-
 interface DataType {
   subtitle: string;
   title: string;
@@ -48,7 +45,7 @@ const feature_data: DataType = {
 }
 const { subtitle, title, des, boxtitle, box_des_1, box_des_2, features, subtitle_2, title_2 } = feature_data
 
-const FeatureHomeTwo = ({ style_2 }: any) => {
+export const FeatureHomeTwo = ({ style_2 }: any) => {
   return (
     <>
       {style_2 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
@@ -159,5 +156,3 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
     </>
   );
 };
-
-export default FeatureHomeTwo;

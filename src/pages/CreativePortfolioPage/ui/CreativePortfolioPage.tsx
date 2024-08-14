@@ -1,7 +1,7 @@
 import HeroHomeFour from '@/components/hero/HeroHomeFour';
 import ServiceHomeFour from '@/components/service/ServiceHomeFour';
 import PortfolioHomeFour from '@/components/portfolio/PortfolioHomeFour';
-import Testimonial from '@/components/testimonial/Testimonial';
+import { Testimonial } from '@/components/testimonial/Testimonial';
 import BlogHomeOne from '@/components/blog/BlogHomeOne';
 import AboutHomeFour from '@/components/about/AboutHomeFour';
 

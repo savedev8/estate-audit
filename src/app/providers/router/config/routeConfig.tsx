@@ -1,6 +1,6 @@
 // import { UserRole } from '@/entities/User';
 import { MainPage } from '@/pages/MainPage';
-// import { AboutPage } from '@/pages/AboutPage';
+import { AboutPage } from '@/pages/AboutPage';
 // import { ProfilePage } from '@/pages/ProfilePage';
 // import { ArticlesPage } from '@/pages/ArticlesPage';
 // import { ArticleDetailsPage } from '@/pages/ArticleDetailsPage';
@@ -11,7 +11,8 @@ import { MainPage } from '@/pages/MainPage';
 import {
     AppRoutes,
     getRouteMain,
-    // getRouteAbout,
+    getRouteAbout,
+    getRouteStartupAgency,
     // getRouteAdmin,
     // getRouteArticleCreate,
     // getRouteArticleDetails,
@@ -21,6 +22,7 @@ import {
     // getRouteProfile,
     // getRouteSettings,
 } from '@/shared/const/router';
+import { StartupAgencyPage } from '@/pages/StartupAgencyPage';
 // import { AppRoutesProps } from '@/shared/types/router';
 // import { SettingsPage } from '@/pages/SettingsPage';
 
@@ -33,10 +35,14 @@ export const routeConfig = {
     //     path: getRouteSettings(),
     //     element: <SettingsPage />,
     // },
-    // [AppRoutes.ABOUT]: {
-    //     path: getRouteAbout(),
-    //     element: <AboutPage />,
-    // },
+    [AppRoutes.ABOUT]: {
+        path: getRouteAbout(),
+        element: <AboutPage />,
+    },
+    [AppRoutes.STARTUP_AGENCY]: {
+        path: getRouteStartupAgency(),
+        element: <StartupAgencyPage />,
+    },
     // [AppRoutes.PROFILE]: {
     //     path: getRouteProfile(':id'),
     //     element: <ProfilePage />,

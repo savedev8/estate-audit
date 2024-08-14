@@ -2,7 +2,7 @@ import { useState } from 'react';
 import VideoPopup from '../modals/VideoPopup';
 import video from '@/shared/assets/img/video_block.jpg';
 
-const VideoHomeOne = ({style_2} : any) => {
+export const VideoHomeOne = ({style_2} : any) => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
 
   return (
@@ -33,5 +33,3 @@ const VideoHomeOne = ({style_2} : any) => {
     </>
   );
 };
-
-export default VideoHomeOne;

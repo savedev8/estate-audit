@@ -1,6 +1,4 @@
-import React from "react";
-
-const MarqueeAreaHomeTwo = () => {
+export const MarqueeAreaHomeTwo = () => {
 	return (
 		<>
 			<div className="cs_height_150 cs_height_lg_60"></div>
@@ -17,5 +15,3 @@ const MarqueeAreaHomeTwo = () => {
 		</>
 	);
 };
-
-export default MarqueeAreaHomeTwo;

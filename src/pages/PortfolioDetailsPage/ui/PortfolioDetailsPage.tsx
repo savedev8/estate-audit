@@ -5,7 +5,7 @@ export const metadata = {
   title: "Portfolio Details Estate Audit",
 };
 
-export const PortfolioPage = () => {
+export const PortfolioDetailsPage = () => {
   return (
       <>
         <PortfolioDetailsArea />

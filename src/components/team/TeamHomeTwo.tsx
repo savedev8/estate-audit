@@ -1,8 +1,6 @@
-
 import team_data from '@/data/team_data';
 import { AppImage } from '@/shared/ui/AppImage';
 import { Link } from "react-router-dom";
-
 
 type DataType = {
   sub_title: string;
@@ -18,7 +16,7 @@ const team_content: DataType = {
 const { sub_title, title, title_2 } = team_content
 
 
-const TeamHomeTwo = ({ style_2, style_3 }: any) => {
+export const TeamHomeTwo = ({ style_2, style_3 }: any) => {
   return (
     <>
       {style_2 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
@@ -75,5 +73,3 @@ const TeamHomeTwo = ({ style_2, style_3 }: any) => {
     </>
   );
 };
-
-export default TeamHomeTwo;

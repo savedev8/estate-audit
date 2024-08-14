@@ -47,7 +47,7 @@ const award_data: DataType[] = [
   },
 ]
 
-const AwardsHomeOne = ({style_2}: any) => {
+export const AwardsHomeOne = ({style_2}: any) => {
 
   const [activeTab, setActiveTab] = useState(0);
   const handleMouseEnter = (index: any) => {
@@ -102,5 +102,3 @@ const AwardsHomeOne = ({style_2}: any) => {
     </>
   );
 };
-
-export default AwardsHomeOne;

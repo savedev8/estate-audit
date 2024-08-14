@@ -1,6 +1,3 @@
-
-
-
 import Count from '../common/Count';
 
 
@@ -33,7 +30,7 @@ const counter_data: DataType[] = [
   },
 ]
 
-const FunFactHomeOne = ({ style_2, style_3 }: any) => {
+export const FunFactHomeOne = ({ style_2, style_3 }: any) => {
   return (
     <>
       <div className="container">
@@ -60,5 +57,3 @@ const FunFactHomeOne = ({ style_2, style_3 }: any) => {
     </>
   );
 };
-
-export default FunFactHomeOne;

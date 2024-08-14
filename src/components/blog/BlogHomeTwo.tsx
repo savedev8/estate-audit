@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import { AppImage } from '@/shared/ui/AppImage';
 
-const BlogHomeTwo = () => {
+export const BlogHomeTwo = () => {
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
@@ -70,5 +70,3 @@ const BlogHomeTwo = () => {
     </>
   );
 };
-
-export default BlogHomeTwo;

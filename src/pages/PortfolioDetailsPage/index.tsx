@@ -1,0 +1,1 @@
+export { PortfolioDetailsPage } from './ui/PortfolioDetailsPage';

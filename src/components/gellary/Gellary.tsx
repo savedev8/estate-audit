@@ -1,6 +1,6 @@
-import gellary_img_1 from "@/assets/img/about_gallery_1.jpg";
-import gellary_img_2 from "@/assets/img/about_gallery_2.jpg";
-import gellary_img_3 from "@/assets/img/about_gallery_3.jpg";
+import gellary_img_1 from "@/shared/assets/img/about_gallery_1.jpg";
+import gellary_img_2 from "@/shared/assets/img/about_gallery_2.jpg";
+import gellary_img_3 from "@/shared/assets/img/about_gallery_3.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,7 +13,7 @@ const gellary_data = [
   gellary_img_3,
 ]
 
-const Gellary = () => {
+export const Gellary = () => {
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
@@ -46,5 +46,3 @@ const Gellary = () => {
     </>
   );
 };
-
-export default Gellary;

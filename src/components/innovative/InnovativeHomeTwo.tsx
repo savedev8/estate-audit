@@ -1,4 +1,4 @@
-import image from "@/assets/img/modern_digital_need.jpg";
+import image from "@/shared/assets/img/modern_digital_need.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
 
 
@@ -40,7 +40,7 @@ const innovative_data: DataType = {
 
 const { title_1, des_1, title_2, des_2, features } = innovative_data;
 
-const InnovativeHomeTwo = () => {
+export const InnovativeHomeTwo = () => {
 	return (
 		<>
 			<div className="cs_height_150 cs_height_lg_60"></div>
@@ -89,5 +89,3 @@ const InnovativeHomeTwo = () => {
 		</>
 	);
 };
-
-export default InnovativeHomeTwo;

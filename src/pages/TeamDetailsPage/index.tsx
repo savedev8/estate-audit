@@ -1,0 +1,1 @@
+export { TeamDetailsPage } from './ui/TeamDetailsPage';
