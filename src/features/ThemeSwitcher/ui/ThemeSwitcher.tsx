@@ -1,9 +1,10 @@
 import dark from '@/shared/assets/img/close.svg';
 import { useEffect, useState } from 'react';
-import brightnes from '@/shared/assets/img/partner_1.svg';
+import brightnes from '@/shared/assets/img/brightnes.svg';
 import { Icon } from '@/shared/ui/Icon';
+import * as cls from './ThemeSwitcher.module.scss';
 
-const DarkLight = () => {
+export const ThemeSwitcher = () => {
 
   const [open, setOpen] = useState<Boolean>(false);
   // open mode
@@ -33,14 +34,12 @@ const DarkLight = () => {
     setActiveMode(mode);
   };
 
-  console.log(typeof(brightnes));
-
   return (
     <>
       <div className="cs_toggle">
         <div className="setting_mode" style={{ right: open ? '120px' : '0px' }}>
           <button id="open" onClick={openDarkLight} style={{ display: open ? 'none' : 'block' }}>
-            <Icon Svg={brightnes} />
+            <Icon Svg={brightnes} className={cls.Btn} />
           </button>
           <button id="clecel" onClick={openDarkLight} style={{ display: open ? 'inline-block' : 'none' }}>
             <Icon Svg={dark} />
@@ -61,5 +60,3 @@ const DarkLight = () => {
     </>
   );
 };
-
-export default DarkLight;

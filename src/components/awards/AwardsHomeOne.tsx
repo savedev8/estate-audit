@@ -7,6 +7,7 @@ import award_thumb_1 from "@/shared/assets/img/award_thumb_1.jpg";
 import award_thumb_2 from "@/shared/assets/img/award_thumb_2.jpg";
 import award_thumb_3 from "@/shared/assets/img/award_thumb_3.jpg";
 import { AppImage } from '@/shared/ui/AppImage';
+import { Icon } from '@/shared/ui/Icon';
 
 
 interface DataType {
@@ -75,7 +76,7 @@ const AwardsHomeOne = ({style_2}: any) => {
                 className={`cs_card cs_style_2 cs_hover_tab anim_div_ShowDowns ${activeTab === i ? 'active' : ''}`}>
                 <div className="cs_card_left">
                   <div className="cs_card_logo">
-                    <AppImage src={item.ward_img} alt="Award" />
+                    <Icon Svg={item.ward_img} />
                   </div>
                   <div>
                     <h2 className="cs_card_title">{item.title}</h2>
