@@ -1,4 +1,4 @@
-import avatar_img_1 from "@/assets/img/team_detalils.jpg";
+import avatar_img_1 from "@/shared/assets/img/team_detalils.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
 
 interface DataType { 
@@ -33,7 +33,7 @@ const team_content: DataType = {
 
 const { des, info } = team_content
 
-const TeamDetailsArea = () => {
+export const TeamDetailsArea = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -87,5 +87,3 @@ const TeamDetailsArea = () => {
     </>
   );
 };
-
-export default TeamDetailsArea;

@@ -1,6 +1,4 @@
-
-
-import image from "@/assets/img/cp_services.jpg";
+import image from "@/shared/assets/img/cp_services.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
 
 

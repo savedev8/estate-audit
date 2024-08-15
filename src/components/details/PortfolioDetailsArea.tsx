@@ -1,15 +1,12 @@
-
-import protfolio_details_1 from "@/assets/img/protfolio_details_1.jpg"; 
-import protfolio_details_2 from "@/assets/img/portfoliodetails_2.jpg"; 
-import protfolio_details_3 from "@/assets/img/portfoliodetails_1.jpg"; 
-import protfolio_details_4 from "@/assets/img/portfolio_solution_1.jpg"; 
-import protfolio_details_5 from "@/assets/img/portfolio_solution_2.jpg"; 
-import protfolio_details_6 from "@/assets/img/portfolio_solution_3.jpg"; 
+import protfolio_details_1 from "@/shared/assets/img/protfolio_details_1.jpg"; 
+import protfolio_details_2 from "@/shared/assets/img/portfoliodetails_2.jpg"; 
+import protfolio_details_3 from "@/shared/assets/img/portfoliodetails_1.jpg"; 
+import protfolio_details_4 from "@/shared/assets/img/portfolio_solution_1.jpg"; 
+import protfolio_details_5 from "@/shared/assets/img/portfolio_solution_2.jpg"; 
+import protfolio_details_6 from "@/shared/assets/img/portfolio_solution_3.jpg"; 
 import { AppImage } from "@/shared/ui/AppImage";
 
-
-
-const PortfolioDetailsArea = () => {
+export const PortfolioDetailsArea = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div> 
@@ -176,5 +173,3 @@ const PortfolioDetailsArea = () => {
     </>
   );
 };
-
-export default PortfolioDetailsArea;

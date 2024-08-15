@@ -1,4 +1,4 @@
-import AboutHomeFour from '@/components/about/AboutHomeFour';
+import { AboutHomeFour } from '@/components/about/AboutHomeFour';
 import HeroService from '@/components/hero/HeroService';
 import Service from '@/components/service/Service';
 import { Testimonial } from '@/components/testimonial/Testimonial';

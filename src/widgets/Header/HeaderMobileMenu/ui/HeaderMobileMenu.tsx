@@ -37,8 +37,8 @@ const menu_data: DataType[] = [
       },
       {
         id: 4,
-        title: "Creative Protfolio",
-        link: "/creative-protfolio",
+        title: "Creative Portfolio",
+        link: "/creative-portfolio",
       },
       {
         id: 5,

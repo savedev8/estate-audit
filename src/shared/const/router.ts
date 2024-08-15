@@ -6,10 +6,9 @@ export enum AppRoutes {
     CREATIVE_PORTFOLIO ='creative-portfolio',
     MARKETING_AGENCY ='marketing-agency',
     TEAM ='team',
-    TEAN_DETAILS ='team-details',
+    TEAM_DETAILS ='team-details',
     CONTACT ='contact',
     FAQ ='faq',
-    ERROR ='error',
     SERVICE ='service',
     SERVICE_DETAILS = 'service-details',
     PORTFOLIO ='portfolio',
@@ -40,7 +39,6 @@ export const getRouteTeam = () => '/team';
 export const getRouteTeamDetails = () => '/team-details';
 export const getRouteContact = () => '/contact';
 export const getRouteFaq = () => '/faq';
-export const getRouteError = () => '/error';
 
 export const getRouteService = () => '/service';
 export const getRouteServiceDetails = () => '/service-details';

@@ -54,9 +54,7 @@ const blog_data: DataType[] = [
 
 ]
 
-
-
-const BlogHomeOne = ({ style_2, style_3 }: any) => {
+export const BlogHomeOne = ({ style_2, style_3 }: any) => {
   return (
     <>
       <section>
@@ -130,5 +128,3 @@ const BlogHomeOne = ({ style_2, style_3 }: any) => {
     </>
   );
 };
-
-export default BlogHomeOne;

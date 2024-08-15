@@ -1,7 +1,7 @@
-import journey_img_1 from "@/assets/img/Journey_story_1.png";
-import journey_img_2 from "@/assets/img/Journey_story_2.png";
-import journey_img_3 from "@/assets/img/Journey_story_3.png";
-import journey_img_4 from "@/assets/img/Journey_story_4.png";
+import journey_img_1 from "@/shared/assets/img/Journey_story_1.png";
+import journey_img_2 from "@/shared/assets/img/Journey_story_2.png";
+import journey_img_3 from "@/shared/assets/img/Journey_story_3.png";
+import journey_img_4 from "@/shared/assets/img/Journey_story_4.png";
 import { AppImage } from "@/shared/ui/AppImage";
 
 const JourneyHomeThree = () => {

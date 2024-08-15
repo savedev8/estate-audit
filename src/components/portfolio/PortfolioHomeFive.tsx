@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import portfolio_img_1 from '@/assets/img/case_study_2.jpg';
-import portfolio_img_2 from '@/assets/img/case_study_3.jpg';
-import portfolio_img_3 from '@/assets/img/case_study_4.jpg';
+import portfolio_img_1 from '@/shared/assets/img/case_study_2.jpg';
+import portfolio_img_2 from '@/shared/assets/img/case_study_3.jpg';
+import portfolio_img_3 from '@/shared/assets/img/case_study_4.jpg';
 import { AppImage } from "@/shared/ui/AppImage";
 
 const portfolio_data = [
@@ -40,7 +40,7 @@ const portfolio_data = [
 ]
 
 
-const PortfolioHomeFive = () => {
+export const PortfolioHomeFive = () => {
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
@@ -106,5 +106,3 @@ const PortfolioHomeFive = () => {
     </>
   );
 };
-
-export default PortfolioHomeFive;

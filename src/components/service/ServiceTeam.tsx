@@ -34,7 +34,7 @@ const service_data: DataType[] = [
   },
 ]
 
-const ServiceTeam = () => {
+export const ServiceTeam = () => {
   return (
     <>
       <section>
@@ -74,5 +74,3 @@ const ServiceTeam = () => {
     </>
   );
 };
-
-export default ServiceTeam;

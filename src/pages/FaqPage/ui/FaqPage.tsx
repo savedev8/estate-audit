@@ -1,4 +1,4 @@
-import FaqArea from '@/components/faq/FaqArea';
+import { FaqArea } from '@/components/faq/FaqArea';
 
 export const metadata = {
   title: "Faq Estate Audit",

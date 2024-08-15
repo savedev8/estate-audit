@@ -1,4 +1,3 @@
-
 import UseSticky from "@/hooks/UseSticky";
 import { useEffect, useState } from "react";
 import logo from "@/shared/assets/img/logo.svg";
@@ -20,7 +19,6 @@ interface DataType {
 		link: string;
 	}[]
 }
-
 
 const menu_data: DataType[] = [
 	{
@@ -46,8 +44,8 @@ const menu_data: DataType[] = [
 			},
 			{
 				id: 4,
-				title: "Creative Protfolio",
-				link: "/creative-protfolio",
+				title: "Creative Portfolio",
+				link: "/creative-portfolio",
 			},
 			{
 				id: 5,
@@ -164,12 +162,8 @@ const menu_data: DataType[] = [
 
 ]
 
-
 export const HeaderOne = () => {
 	const { sticky } = UseSticky()
-
-
-
 	const [active, setActive] = useState<Boolean>(false);
 	const handleActive = () => {
 		setActive(!active)

@@ -1,7 +1,5 @@
-
-
 import { Link } from "react-router-dom";
-
+import img from '@/shared/assets/img/hero_img_1.jpg';
 
 interface DataType {
   id: number;
@@ -66,7 +64,7 @@ const ServiceHomeOne = () => {
             {service_data.map((item, i) => (
               <div key={i} className="cs_card cs_style_1 cs_color_1 anim_div_ShowDowns">
                 <div className="cs_card_left">
-                  <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url(/shared/assets/img/hero_img_1.jpg)` }}>
+                  <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url(${img})` }}>
                     0{i + 1}
                   </div>
                 </div>

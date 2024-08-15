@@ -33,7 +33,7 @@ const faq_data = [
   },
 ]
 
-const FaqArea = () => {
+export const FaqArea = () => {
 
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
@@ -88,5 +88,3 @@ const FaqArea = () => {
     </>
   );
 };
-
-export default FaqArea;

@@ -1,5 +1,5 @@
-import services_exploring from "@/assets/img/services_exploring.jpg"
-import sound_box_icon from "@/assets/img/sound_box_icon.jpg"
+import services_exploring from "@/shared/assets/img/services_exploring.jpg"
+import sound_box_icon from "@/shared/assets/img/sound_box_icon.jpg"
 import { AppImage } from "@/shared/ui/AppImage";
 import { Link } from "react-router-dom";
 

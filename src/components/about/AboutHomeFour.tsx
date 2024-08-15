@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const AboutHomeFour = () => {
+export const AboutHomeFour = () => {
 	return (
 		<>
 			<section>
@@ -37,5 +37,3 @@ const AboutHomeFour = () => {
 		</>
 	);
 };
-
-export default AboutHomeFour;

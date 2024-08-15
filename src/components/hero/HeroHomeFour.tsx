@@ -1,4 +1,4 @@
-import hero_img from '@/assets/img/creative_banner_img.jpg';
+import hero_img from '@/shared/assets/img/creative_banner_img.jpg';
 import { AppImage } from '@/shared/ui/AppImage';
 
 const hero_data = {

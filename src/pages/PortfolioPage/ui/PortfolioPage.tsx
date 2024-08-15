@@ -1,5 +1,5 @@
-import AboutHomeFour from '@/components/about/AboutHomeFour';
-import Portfolio from '@/components/portfolio/Portfolio';
+import { AboutHomeFour } from '@/components/about/AboutHomeFour';
+import { Portfolio } from '@/components/portfolio/Portfolio';
 
 export const metadata = {
   title: "Portfolio Estate Audit- Digital  Creative Agency Next js Template",

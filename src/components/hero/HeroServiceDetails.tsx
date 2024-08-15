@@ -1,4 +1,4 @@
-import banner_img from '@/assets/img/service_details_banner.jpg';
+import banner_img from '@/shared/assets/img/service_details_banner.jpg';
 import { AppImage } from '@/shared/ui/AppImage';
 
 interface DataType {

@@ -1,4 +1,4 @@
-const ContactArea = () => {
+export const ContactArea = () => {
 
   return (
     <>
@@ -142,5 +142,3 @@ const ContactArea = () => {
     </>
   );
 };
-
-export default ContactArea;

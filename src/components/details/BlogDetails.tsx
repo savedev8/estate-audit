@@ -1,11 +1,11 @@
-import BlogHomeOne from '../blog/BlogHomeOne';
+import { BlogHomeOne } from '../blog/BlogHomeOne';
 
-import blog_detaisl_img_1 from "@/assets/img/blog_detals_banner.jpg";
+import blog_detaisl_img_1 from "@/shared/assets/img/blog_detals_banner.jpg";
 
-import blog_details_1 from "@/assets/img/blog_details_1.jpg";
-import blog_details_2 from "@/assets/img/blog_details_2.jpg";
-import blog_details_3 from "@/assets/img/blog_details_3.jpg";
-import blog_details_4 from "@/assets/img/blog_details_4.jpg";
+import blog_details_1 from "@/shared/assets/img/blog_details_1.jpg";
+import blog_details_2 from "@/shared/assets/img/blog_details_2.jpg";
+import blog_details_3 from "@/shared/assets/img/blog_details_3.jpg";
+import blog_details_4 from "@/shared/assets/img/blog_details_4.jpg";
 import { AppImage } from '@/shared/ui/AppImage';
 
 const blog_details_content = {
@@ -32,7 +32,7 @@ const blog_details_content = {
 
 const { title, info, title_2, des_1, features, des_2, qute, writer, des_3 } = blog_details_content
 
-const BlogDetails = () => {
+export const BlogDetails = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -249,5 +249,3 @@ const BlogDetails = () => {
     </>
   );
 };
-
-export default BlogDetails;

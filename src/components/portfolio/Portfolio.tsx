@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 // import portfolio_data from '@/data/portfolio_data';
 import { Link } from "react-router-dom";
 
-import portfolio_img_6 from "@/assets/img/portfolio_1.jpg";
-import portfolio_img_7 from "@/assets/img/portfolio_2.jpg";
-import portfolio_img_8 from "@/assets/img/portfolio_3.jpg";
-import portfolio_img_9 from "@/assets/img/portfolio_5.jpg";
-import portfolio_img_10 from "@/assets/img/portfolio_6.jpg";
-import portfolio_img_11 from "@/assets/img/portfolio_7.jpg";
+import portfolio_img_6 from "@/shared/assets/img/portfolio_1.jpg";
+import portfolio_img_7 from "@/shared/assets/img/portfolio_2.jpg";
+import portfolio_img_8 from "@/shared/assets/img/portfolio_3.jpg";
+import portfolio_img_9 from "@/shared/assets/img/portfolio_5.jpg";
+import portfolio_img_10 from "@/shared/assets/img/portfolio_6.jpg";
+import portfolio_img_11 from "@/shared/assets/img/portfolio_7.jpg";
 import { AppImage } from '@/shared/ui/AppImage';
 
 
@@ -69,7 +69,7 @@ const portfolio_data: DataType[] = [
 // data
 const categories = ["All", ...new Set(portfolio_data.map((item) => item.category))];
 
-const Portfolio = () => {
+export const Portfolio = () => {
 
   const [activeCategory, setActiveCategory] = useState("All");
   const [items, setItems] = useState(portfolio_data);
@@ -159,5 +159,3 @@ const Portfolio = () => {
     </>
   );
 };
-
-export default Portfolio;

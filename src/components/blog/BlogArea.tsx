@@ -68,7 +68,7 @@ const blog_data = [
 ]
 
 
-const BlogArea = () => {
+export const BlogArea = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -125,5 +125,3 @@ const BlogArea = () => {
     </>
   );
 };
-
-export default BlogArea;

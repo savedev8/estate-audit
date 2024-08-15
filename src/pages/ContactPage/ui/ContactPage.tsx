@@ -1,4 +1,4 @@
-import ContactArea from '@/components/contact/ContactArea';
+import { ContactArea } from '@/components/contact/ContactArea';
 
 export const metadata = {
   title: "Team Details Estate Audit",

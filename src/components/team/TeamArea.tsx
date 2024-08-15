@@ -1,11 +1,8 @@
-
-
 import team_data from '@/data/team_data';
 import { AppImage } from '@/shared/ui/AppImage';
 import { Link } from "react-router-dom";
 
-
-const TeamArea = () => {
+export const TeamArea = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -64,5 +61,3 @@ const TeamArea = () => {
     </>
   );
 };
-
-export default TeamArea;
