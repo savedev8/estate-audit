@@ -1,6 +1,6 @@
 import UseSticky from "@/hooks/UseSticky";
 import { useEffect, useState } from "react";
-import logo from "@/shared/assets/img/logo.svg";
+import  logo from "@/shared/assets/img/flat_guide.svg";
 import Logo_white from "@/shared/assets/img/Logo_white.png";
 import { Link } from "react-router-dom";
 import { AppImage } from "@/shared/ui/AppImage";
@@ -23,7 +23,7 @@ interface DataType {
 const menu_data: DataType[] = [
 	{
 		id: 1,
-		title: "Home",
+		title: "Главная", // "Home",
 		link: "/",
 		has_dropdown: true,
 		sub_menu: [

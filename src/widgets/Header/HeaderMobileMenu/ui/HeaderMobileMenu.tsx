@@ -16,7 +16,7 @@ interface DataType {
 const menu_data: DataType[] = [
   {
     id: 1,
-    title: "Home",
+    title: "Главная", // "Home",
     link: "/",
     has_dropdown: true,
     sub_menu: [

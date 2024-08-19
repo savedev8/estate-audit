@@ -6,22 +6,23 @@ import img1 from '@/shared/assets/img/hero_img_1.jpg';
 const hero_slider = [
   {
     img: img1,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+    sub_title: "Creative Agency Этапы покупки квартиры на вторичном рынке",
+    // sub_title: "Этапы покупки квартиры на вторичном рынке",
+    title: "Простые шаги для приобретения собственного жилья",
+    des: `Разберём все этапы сделок с недвижимостью на вторичном рынке, включая возможные подводные камни и необходимые документы.`
   },
-  {
-    img: img1,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
-  },
-  {
-    img: img1,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
-  },
+  // {
+  //   img: img1,
+  //   sub_title: "Creative Agency",
+  //   title: "Expert Digital Services for Your Own Business",
+  //   title: "Expert Digital Services for Your Own Business",
+  //   des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+  // },
+  // {
+  //   img: img1,
+  //   sub_title: "Creative Agency",
+  //   des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+  // },
 ]
 
 
