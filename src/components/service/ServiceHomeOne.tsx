@@ -10,41 +10,61 @@ interface DataType {
 const service_data: DataType[] = [
   {
     id: 1,
-    title: `Application Development`,
+    title: `Выбор квартиры`,
     des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
   },
   {
     id: 2,
-    title: `Web Development`,
+    title: `Условия сделки`,
     des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
   },
   {
     id: 3,
-    title: `Digital Services`,
+    title: `Внесение аванса`,
     des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
   },
   {
     id: 4,
-    title: `Digital Product Design`,
+    title: `Проверка квартиры`,
+    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+  },
+  {
+    id: 5,
+    title: `Подписание договора`,
+    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+  },
+  {
+    id: 6,
+    title: `Регистрирация сделки`,
+    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+  },
+  {
+    id: 7,
+    title: `Расчёт за квартиру`,
+    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+  },
+  {
+    id: 8,
+    title: `Приёмка квартиры`,
     des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
   },
 
 ]
 
-const ServiceHomeOne = () => {
+export const ServiceHomeOne = () => {
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
-      <section className="cs_primary_bg position-relative">
+      <section className="cs_primary_bg position-relative" id="target">
         <div className="cs_height_150 cs_height_lg_60"></div>
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1 cs_color_1">
             <div className="cs_section_heading_text">
               <div className="cs_section_subtitle anim_div_ShowZoom">
-                Our Services
+                Все этапы
               </div>
               <h2 className="cs_section_title anim_heading_title">
-                Comprehensive Digital Strategy Transformation
+                Через какие этапы необходимо пройти чтобы получить желаемый объект:
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
@@ -115,5 +135,3 @@ const ServiceHomeOne = () => {
     </>
   );
 };
-
-export default ServiceHomeOne;

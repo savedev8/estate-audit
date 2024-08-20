@@ -47,12 +47,23 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
         ],
     };
 
+    // const fontsLoader = {
+    //     test: /\.(woff(2)?|eot|ttf|otf|)$/,
+    //     use: [
+    //         {
+    //             loader: 'file-loader',
+    //         },
+    //     ],
+    // };
+
     return [
         fileLoader,
+        // fontsLoader,
         svgLoader,
         codeBabelLoader,
         tsxCodeBabelLoader,
         // typescriptLoader,
         cssLoader,
+
     ];
 }

@@ -41,6 +41,11 @@
     margin-left: 55px;
 }
 
+.cs_nav .cs_nav_list a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .cs_site_header.cs_style1 {
     &.cs_sticky-active {
         background-color: $white;
@@ -390,7 +395,8 @@
         align-items: center;
         height: 100%;
         line-height: 1.6em;
-        font-size: 16px;
+        font-size: 12px;
+        font-weight: 700;
         .cs_nav_list {
             display: flex !important;
             flex-wrap: wrap;

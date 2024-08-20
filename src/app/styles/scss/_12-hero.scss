@@ -30,9 +30,14 @@
 	}
 	.cs_hero_text_in {
 		padding-left: 52%;
+		.cs_hero_subtitle {
+			font-size: 16px;
+			font-weight: 500;
+		}
 	}
 	.cs_hero_mini_title {
-		font-size: 18px;
+		font-size: 16px;
+		font-weight: 500;
 		line-height: 1.6em;
 		margin-bottom: 0px;
 		color: --primary-color;

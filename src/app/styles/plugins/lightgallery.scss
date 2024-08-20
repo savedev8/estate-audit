@@ -1,12 +1,12 @@
 .lg-sub-html,
 .lg-toolbar {
-  background-color: transparent;
+  background-color: red !important;
 }
 @font-face {
   font-family: lg;
-  src: url(../fonts/lg.woff?n1z373) format("woff"),
-        url(../fonts/lg.ttf?n1z373) format("truetype"),
-        url(../fonts/lg.svg?n1z373#lg) format("svg");
+  src: url(/src/app/styles/fonts/lg.woff) format("woff"),
+        url(/src/app/styles/fonts/lg.ttf?n1z373) format("truetype"),
+        url(/src/app/styles/fonts/lg.svg?n1z373#lg) format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -830,7 +830,7 @@ body:not(.lg-from-hash)
   white-space: nowrap;
 }
 .lg-outer .lg-item {
-  background: url(../../../shared/assets/img/loading.gif) center center no-repeat;
+  background: url(/src/shared/assets/img/loading.gif) center center no-repeat;
   display: none !important;
 }
 .lg-outer.lg-css .lg-current,

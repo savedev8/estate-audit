@@ -6,8 +6,7 @@ import img1 from '@/shared/assets/img/hero_img_1.jpg';
 const hero_slider = [
   {
     img: img1,
-    sub_title: "Creative Agency Этапы покупки квартиры на вторичном рынке",
-    // sub_title: "Этапы покупки квартиры на вторичном рынке",
+    sub_title: "Этапы покупки квартиры на вторичном рынке",
     title: "Простые шаги для приобретения собственного жилья",
     des: `Разберём все этапы сделок с недвижимостью на вторичном рынке, включая возможные подводные камни и необходимые документы.`
   },
@@ -62,10 +61,10 @@ export const HeroHomeOne = () => {
                     <div className="cs_height_65 cs_height_lg_40"></div>
                     <div className="cs_hero_btn_wrap">
                       <div className="cs_round_btn_wrap">
-                        <Link to="/portfolio"
+                        <Link to="#target"
                           className="cs_hero_btn cs_round_btn btn-item"><span></span>
-                          Our
-                          Projects</Link>
+                          Все этапы
+                        </Link>
                       </div>
                     </div>
                   </div>

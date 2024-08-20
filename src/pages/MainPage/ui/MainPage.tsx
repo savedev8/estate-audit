@@ -1,7 +1,7 @@
 import { HeroHomeOne } from '@/components/hero/HeroHomeOne';
 import AboutHomeOne from '@/components/about/AboutHomeOne';
-import ServiceHomeOne from '@/components/service/ServiceHomeOne';
-import MarqueeAreaHomeOne from '@/components/brand/MarqueeAreaHomeOne';
+import { ServiceHomeOne } from '@/components/service/ServiceHomeOne';
+import { MarqueeAreaHomeOne } from '@/components/brand/MarqueeAreaHomeOne';
 import { PortfolioHomeOne } from '@/components/portfolio/PortfolioHomeOne';
 import { AwardsHomeOne } from '@/components/awards/AwardsHomeOne';
 import { Testimonial } from '@/components/testimonial/Testimonial';
@@ -20,7 +20,7 @@ export const MainPage = () => {
         <>
         <HeroHomeOne />
         <MarqueeAreaHomeOne />
-        <AboutHomeOne />
+        {/* <AboutHomeOne /> */}
         <ServiceHomeOne />
         <PortfolioHomeOne />
         <AwardsHomeOne />
