@@ -3,36 +3,37 @@ import { AppImage } from "@/shared/ui/AppImage";
 
 
 const service_content = {
-  title: 'Our Services',
-  des: 'Comprehensive Digital Services & Transformation',
+  title: 'Условия сделки',
+  des: 'Квартира выбрана? Обсудим условия сделки и подтвердим наши намерения.',
   service_data: [
     {
       id: 1,
-      title: " UI/UX Design",
+      title: "Последняя цена и торг",
     },
     {
       id: 2,
-      title: " Branding Design",
+      title: "Форма расчётов",
     },
     {
       id: 3,
-      title: " Marketing Asset",
+      title: "Cроки оформления и регистрации сделки",
     },
     {
       id: 4,
-      title: " Development",
+      title: "Проверка базовых документов",
     },
     {
       id: 5,
-      title: " Creative Art",
+      title: "Внесение аванса",
     },
   ]
 }
 const { title, des, service_data } = service_content
 
-const ServiceHomeFour = () => {
+export const ServiceHomeFour = () => {
   return (
     <>
+    <div className="cs_height_150 cs_height_lg_60"></div>
       <section>
         <div className="container">
           <div className="cs_section_heading cs_style_1">

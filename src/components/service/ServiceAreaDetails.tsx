@@ -1,6 +1,3 @@
-
-
-
 interface DataType {
   id: string;
   title: string;
@@ -8,24 +5,25 @@ interface DataType {
 }
 const service_data: DataType[] = [
   {
-    id: 'one',
-    title: "Understand",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    id: '№1',
+    title: "Потребности и бюджет",
+    description: `
+    Четко сформулируйте, сколько комнат и какой район вам нужен, а также сколько денег вы готовы потратить.`,
   },
   {
-    id: 'Two',
-    title: "Design",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    id: '№2',
+    title: "Анализ объявлений",
+    description: `Приступайте к поиску на нескольких сайтах-агрегаторах, потому что разные источники могут предложить уникальные варианты.`,
   },
   {
-    id: 'Three',
-    title: "Development",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    id: '№3',
+    title: "Уточнение деталей",
+    description: `Узнайте о наличии правоустанавливающих документов на квартиру и отсутствии обременений, чтобы избежать неожиданных ситуаций.`,
   },
   {
-    id: 'Four',
-    title: "Testing",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    id: '№4',
+    title: "Просмотры объектов",
+    description: `На просмотрах оцените состояние дома, подъезда и квартиры, а также техническое состояние помещения и возможные изменения в планировке.`,
   },
 ]
 
@@ -33,20 +31,20 @@ const service_data: DataType[] = [
 const ServiceAreaDetails = () => {
   return (
     <>
-      <div className="cs_height_150 cs_height_lg_50"></div>
+      <div className="cs_height_70 cs_height_lg_30"></div>
       <section>
         <div className="container">
           <div className="cs_work cs_work_text">
             <h4 className="anim_heading_title">
-              Specialization & Working Process
+              Необходимы 4 важных шага
             </h4>
-            <p className="cs_mp0 anim_text">
+            {/* <p className="cs_mp0 anim_text">
               Welcome to our digital agency! We specialize in helping businesses like yours succeed online.
               From website design and development to digital marketing and advertising, we have the tools and
               expertise to elevate your online presence.
-            </p>
+            </p> */}
           </div>
-          <div className="cs_height_80 cs_height_lg_40"></div>
+          {/* <div className="cs_height_80 cs_height_lg_40"></div> */}
           <div>
             <div className="cs_work cs_work_1">
               <div className="cs_card_work cs_style_1">

@@ -5,48 +5,51 @@ interface DataType {
   id: number;
   title: string;
   des: string;
+  link?: string;
 }[]
 
 const service_data: DataType[] = [
   {
     id: 1,
     title: `Выбор квартиры`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    des: `Выясняем потребности и предпочтения к объекту, устанавливаем бюджет, смотрим объявления и уточняем детали по телефону, отправляемся на просмотры.`,
+    link: '/service-details'
   },
   {
     id: 2,
     title: `Условия сделки`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    des: `Квартиру выбрали – обсуждаем условия сделки`,
+    link: '/creative-portfolio'
   },
   {
     id: 3,
     title: `Внесение аванса`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    des: `Фиксируем намерения.`,
   },
   {
     id: 4,
     title: `Проверка квартиры`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    des: `Проверяем квартиру и продавца`
   },
   {
     id: 5,
     title: `Подписание договора`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    des: `Подписываем договор купли-продажи.`
   },
   {
     id: 6,
     title: `Регистрирация сделки`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    des: `Регистрируем сделку.`
   },
   {
     id: 7,
     title: `Расчёт за квартиру`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    des: `Рассчитываемся за квартиру.`
   },
   {
     id: 8,
     title: `Приёмка квартиры`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    des: `Принимаем квартиру.`
   },
 
 ]
@@ -68,8 +71,8 @@ export const ServiceHomeOne = () => {
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
-              <Link to="/service" className="cs_btn cs_style_1 cs_color_1">
-                <span>View Services</span>
+              <Link to="/faq" className="cs_btn cs_style_1 cs_color_1">
+                <span>Частые вопросы</span>
                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -91,7 +94,7 @@ export const ServiceHomeOne = () => {
                 <div className="cs_card_right">
                   <div className="cs_card_right_in">
                     <h2 className="cs_card_title">
-                      <Link to="/service-details">{item.title}</Link>
+                      <Link to={item.link || `/service-details`}>{item.title}</Link>
                     </h2>
                     <div className="cs_card_subtitle">
                       {item.des}
@@ -99,7 +102,7 @@ export const ServiceHomeOne = () => {
                   </div>
                 </div>
                 <div className="cs_card_link_wrap">
-                  <Link to="/service-details" className="cs_card_link">
+                  <Link to={item.link || `/service-details`} className="cs_card_link">
                     <span>
                       <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +134,6 @@ export const ServiceHomeOne = () => {
         </div>
         <div className="cs_height_100 cs_height_lg_30"></div>
       </section>
-
     </>
   );
 };

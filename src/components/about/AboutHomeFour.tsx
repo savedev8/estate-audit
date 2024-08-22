@@ -1,6 +1,11 @@
+import { LinkType } from "@/pages/ServiceDetailsPage/ui/ServiceDetailsPage";
 import { Link } from "react-router-dom";
 
-export const AboutHomeFour = () => {
+interface AboutHomeFourProps {
+	next_data?: LinkType | undefined; // Указываем, что next_data должен быть типа DataType
+}
+
+export const AboutHomeFour: React.FC<AboutHomeFourProps>= ({ next_data }) => {
 	return (
 		<>
 			<section>
@@ -9,12 +14,12 @@ export const AboutHomeFour = () => {
 						<div className="cs_section_heading cs_style_1">
 							<div className="cs_section_heading_text">
 								<h3 className="cs_section_title_3 anim_heading_title">
-									We'd be interested in learning more about your project.
+									{next_data?.title || `We'd be interested in learning more about your project.`}
 								</h3>
 							</div>
 							<div className="cs_section_heading_right cs_btn_anim">
-								<Link to="/contact" className="cs_btn cs_style_1">
-									<span>Contact Us</span>
+								<Link to={next_data?.link || `/contact`} className="cs_btn cs_style_1">
+									<span>{next_data?.text || `Contact Us`}</span>
 									<svg
 										width="19"
 										height="13"

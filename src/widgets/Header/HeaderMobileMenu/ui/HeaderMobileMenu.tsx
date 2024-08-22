@@ -16,13 +16,13 @@ interface DataType {
 const menu_data: DataType[] = [
   {
     id: 1,
-    title: "Главная", // "Home",
+    title: "Главная",
     link: "/",
     has_dropdown: true,
     sub_menu: [
       {
         id: 1,
-        title: "Digital Agency",
+        title: "Главная",
         link: "/",
       },
       {
@@ -45,114 +45,122 @@ const menu_data: DataType[] = [
         title: "Marketing Agency",
         link: "/marketing-agency",
       },
-    ]
-  },
-  {
-    id: 2,
-    title: "About",
-    link: '/about',
-    has_dropdown: false
-  },
-  {
-    id: 3,
-    title: "Pages",
-    link: "/about",
-    has_dropdown: true,
-    sub_menu: [
       {
-        id: 1,
+        id: 6,
         title: "About",
-        link: "/about",
+        link: '/about',
       },
       {
-        id: 2,
-        title: "Team",
-        link: "/team",
+        id: 7,
+        title: "Services",
+        link: "/service",
       },
       {
-        id: 3,
-        title: "Team Details",
-        link: "/team-details",
+        id: 8,
+        title: "Services Details",
+        link: "/service-details",
       },
       {
-        id: 4,
+        id: 9,
+        title: "Листинг с табами",
+        link: "/portfolio",
+      },
+      {
+        id: 10,
+        title: "Portfolio Details",
+        link: "/portfolio-details",
+      },
+      {
+        id: 11,
+        title: "Листинг",
+        link: "/blog",
+      },
+      {
+        id: 12,
+        title: "Blog Details",
+        link: "/blog-details",
+      },
+      {
+        id: 13,
         title: "Contact",
         link: "/contact",
       },
       {
-        id: 5,
+        id: 14,
+        title: "Листинг",
+        link: "/team",
+      },
+      {
+        id: 15,
+        title: "Team Details",
+        link: "/team-details",
+      },
+      {
+        id: 16,
         title: "Faq",
         link: "/faq",
       },
       {
-        id: 6,
+        id: 17,
         title: "Error",
         link: "/error",
       }
     ]
   },
   {
-    id: 4,
-    title: "Services",
-    link: "/service",
+    id: 2,
+    title: "Этапы покупки",
+    link: "/",
     has_dropdown: true,
     sub_menu: [
       {
         id: 1,
-        title: "Services",
-        link: "/service",
-      },
-      {
-        id: 2,
-        title: "Services Details",
+        title: "Выбор квартиры",
         link: "/service-details",
-      }
-    ]
-  },
-  {
-    id: 5,
-    title: "Portfolio",
-    link: "/portfolio",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Portfolio",
-        link: "/portfolio",
       },
       {
         id: 2,
-        title: "Portfolio Details",
-        link: "/portfolio-details",
-      }
-    ]
-  },
-  {
-    id: 6,
-    title: "Blog",
-    link: "/blog",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Blog",
-        link: "/blog",
+        title: "Условия сделки",
+        link: "/creative-portfolio",
       },
       {
-        id: 2,
-        title: "Blog Details",
-        link: "/blog-details",
-      }
+        id: 3,
+        title: "Внесение аванса",
+        link: "/team-details",
+      },
+      {
+        id: 4,
+        title: "Проверка квартиры",
+        link: "/contact",
+      },
+      {
+        id: 5,
+        title: "Подписание договора",
+        link: "/faq",
+      },
+      {
+        id: 6,
+        title: "Регистрация сделки",
+        link: "/error",
+      },
+      {
+        id: 7,
+        title: "Расчёт за квартиру",
+        link: "/error",
+      },
+      {
+        id: 8,
+        title: "Приёмка квартиры",
+        link: "/error",
+      }    
     ]
   },
   {
-    id: 7,
-    title: "Contact",
-    link: "/contact",
+    id: 3,
+    title: "Частые вопросы",
+    link: "/faq",
     has_dropdown: false,
   }
-
-
 ]
 
 

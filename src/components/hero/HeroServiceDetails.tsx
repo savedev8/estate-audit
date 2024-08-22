@@ -7,7 +7,7 @@ interface DataType {
   features: string[];
 }
 const hero_contact: DataType = {
-  title: "Digital Product Design",
+  title: "Выбор подходящего объекта недвижимости",
   description: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digita`,
   features: [
     `Design Welcome to our digital agency!`,
@@ -18,7 +18,7 @@ const hero_contact: DataType = {
 }
 const { title, description, features } = hero_contact
 
-const HeroServiceDetails = () => {
+export const HeroServiceDetails = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -31,7 +31,7 @@ const HeroServiceDetails = () => {
               </h2>
             </div>
           </div>
-          <div className="cs_height_100 cs_height_lg_60"></div>
+          {/* <div className="cs_height_100 cs_height_lg_60"></div>
           <div className="cs_service_details">
             <div className="cs_service_details_img">
               <div className="cs_style_img">
@@ -48,11 +48,9 @@ const HeroServiceDetails = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
   );
 };
-
-export default HeroServiceDetails;

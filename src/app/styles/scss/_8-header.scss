@@ -348,9 +348,9 @@
 
 .cs_site_branding {
     display: inline-block;
-    img {
-        max-height: 45px;
-    }
+    // img {
+    //     max-height: 45px;
+    // }
 }
 
 @media screen and (min-width: 1200px) {
@@ -834,7 +834,7 @@
         margin-right: 0;
     }
     .cs_site_branding img {
-        max-height: 32px;
+        // max-height: 32px;
     }
     .cs_site_header.cs_style1 .cs_btn {
         span {

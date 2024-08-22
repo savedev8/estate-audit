@@ -8,7 +8,7 @@ const hero_data = {
 }
 const { title_1, title_2, des } = hero_data;
 
-const HeroHomeFour = () => {
+export const HeroHomeFour = () => {
   return (
     <>
       <section>
@@ -32,4 +32,3 @@ const HeroHomeFour = () => {
   );
 };
 
-export default HeroHomeFour;

@@ -22,14 +22,14 @@ export const MainPage = () => {
         <MarqueeAreaHomeOne />
         {/* <AboutHomeOne /> */}
         <ServiceHomeOne />
-        <PortfolioHomeOne />
+        {/* <PortfolioHomeOne />
         <AwardsHomeOne />
         <Testimonial />
         <FunFactHomeOne />
         <VideoHomeOne />
         <BlogHomeOne />
         <SubscribeHomeOne />
-        <BrandHomeOne style_2={false} />
+        <BrandHomeOne style_2={false} /> */}
         </>
   );
 };
