@@ -37,7 +37,7 @@ const menu_data: DataType[] = [
       },
       {
         id: 4,
-        title: "Creative Portfolio",
+        title: "Creative Portfolio + Листинг",
         link: "/creative-portfolio",
       },
       {
@@ -126,27 +126,27 @@ const menu_data: DataType[] = [
       {
         id: 3,
         title: "Внесение аванса",
-        link: "/team-details",
+        link: "/marketing-agency",
       },
       {
         id: 4,
         title: "Проверка квартиры",
-        link: "/contact",
+        link: "/blog",
       },
       {
         id: 5,
         title: "Подписание договора",
-        link: "/faq",
+        link: "/team-details",
       },
       {
         id: 6,
         title: "Регистрация сделки",
-        link: "/error",
+        link: "/startup-agency",
       },
       {
         id: 7,
         title: "Расчёт за квартиру",
-        link: "/error",
+        link: "/design-studio",
       },
       {
         id: 8,

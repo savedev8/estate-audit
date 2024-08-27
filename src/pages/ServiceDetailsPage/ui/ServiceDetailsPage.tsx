@@ -20,7 +20,6 @@ const next_data: LinkType = {
     link: '/creative-portfolio',
 }
  
-
 export const ServiceDetailsPage = () => {
   return (
       <>

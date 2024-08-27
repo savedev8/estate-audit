@@ -1,17 +1,26 @@
-import { ServiceTeam } from '@/components/service/ServiceTeam';
+// import { ServiceTeam } from '@/components/service/ServiceTeam';
 import { AboutHomeFour } from '@/components/about/AboutHomeFour';
 import { TeamDetailsArea } from '@/components/details/TeamDetailsArea';
 
-export const metadata = {
-  title: "Team Details Estate Audit ",
-};
+export interface CheckItemType {
+  title: string;
+  text: string;
+  link: string;
+}
+
+const next_data: CheckItemType = {
+    title: "Договор купли-продажи подписан?",
+    text: "Перейдём к этапу №6",
+    // поменять
+    link: '/blog', 
+}
 
 export const TeamDetailsPage = () => {
   return (
       <>
         <TeamDetailsArea />
-        <ServiceTeam />
-        <AboutHomeFour />
+        {/* <ServiceTeam /> */}
+        <AboutHomeFour next_data={next_data} />
       </>
   );
 };

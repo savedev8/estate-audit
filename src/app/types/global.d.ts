@@ -16,6 +16,20 @@ declare module '*.svg' {
     export default SVG;
 }
 
+declare module '*.docx' {
+    const content: string;
+    export default content;
+}
+
+declare module '*.pdf' {
+    const content: string;
+    export default content;
+}
+
+declare module '*.webp' {
+    const content: string;
+    export default content;
+  }
 
 declare const __IS_DEV__: boolean;
 declare const __API__: string;

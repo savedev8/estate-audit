@@ -5,6 +5,7 @@ import AppRouter from "./providers/router/ui/AppRouter";
 import { FooterOne } from "@/widgets/Footer/FooterOne";
 // @ts-ignore
 import WOW from 'wow.js';
+import { ScrollProvider } from './providers/ScrollProvider';
 
 
 export const App = () => {

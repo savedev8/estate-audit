@@ -18,6 +18,8 @@ export const PortfolioDetailsArea = () => {
                 Aske - Task Management Web And Mobile Application
               </h2>
             </div>
+
+            {/* //переиспользуемый блок */}
             <div className="cs_section_heading_right cs_btn_anim">
               <div className="cs_btn cs_style_2 anim_div_ShowZoom">
                 <a target='_blank' href="https://behance.com"   className="col cs_center">Behance</a>

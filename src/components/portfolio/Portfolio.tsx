@@ -91,6 +91,8 @@ export const Portfolio = () => {
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
 
+
+     {/* TITLE */}
       <section>
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1">
@@ -108,6 +110,8 @@ export const Portfolio = () => {
       <section className="cs_ui_design">
         <div className="container">
           <div>
+
+            {/* CATEGORIES */}
             <div className="row">
               <div className="cs_isotop_item_menu col-md-12">
                 <ul className="anim_div_ShowZoom style_active">
@@ -124,6 +128,8 @@ export const Portfolio = () => {
                 </ul>
               </div>
             </div>
+
+            {/* CARDS */}
             <div className="cs_isotop_items_details row">
               {items.map((item, i) => (
                 <div key={i} className="col-md-4 cs_item cs_ui_design cs_development">
@@ -147,6 +153,8 @@ export const Portfolio = () => {
             </div>
           </div>
           <div className="cs_height_70 cs_height_lg_30"></div>
+
+          {/* LOAD MORE BUTTON переиспользуемый */}
           <div>
             <div className="cs_hero_btn_wrap text-center">
               <div className="cs_round_btn_wrap">
