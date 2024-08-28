@@ -30,26 +30,29 @@
       "@/components/*": [
         "./src/components/*"
       ],
-      "@/widgets/*": [
-        "./src/widgets/*"
-      ],
       "@/data/*": [
         "./src/data/*"
       ],
-      "@/hooks/*": [
-        "./src/hooks/*"
-      ],
-      "@/utils/*": [
-        "./src/utils/*"
+      "@/features/*": [
+        "./src/features/*"
       ],
       "@/helpers/*": [
         "./src/helpers/*"
+      ],
+      "@/hooks/*": [
+        "./src/hooks/*"
       ],
       "@/plugins/*": [
         "./src/plugins/*"
       ],
       "@/shared/*": [
         "./src/shared/*"
+      ],
+      "@/utils/*": [
+        "./src/utils/*"
+      ],
+      "@/widgets/*": [
+        "./src/widgets/*"
       ],
     }
   },
@@ -60,8 +63,9 @@
   },
   "include": [
     "./src/**/*.ts",
-    "./src/**/*.tsx"
-, "src/widgets/Header/HeaderMobileMenu"  ],
+    "./src/**/*.tsx",
+    "src/widgets/Header/HeaderMobileMenu"
+  ],
   "exclude": [
     "node_modules"
   ]

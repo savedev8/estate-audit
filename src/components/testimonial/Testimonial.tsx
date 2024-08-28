@@ -33,7 +33,7 @@ const testimonial_data: DataType[] = [
   },
 ]
 
-const Testimonial = ({ style_service }: any) => {
+export const Testimonial = ({ style_service }: any) => {
   return (
     <>
       <section className={`${style_service ? 'cs_shape_wrap_3' : 'cs_primary_bg cs_shape_wrap_2'}`}>
@@ -134,5 +134,3 @@ const Testimonial = ({ style_service }: any) => {
     </>
   );
 };
-
-export default Testimonial;

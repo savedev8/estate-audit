@@ -1,4 +1,4 @@
-import image from "@/assets/img/modern_digital_need.jpg";
+import image from "@/shared/assets/img/modern_digital_need.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
 
 
@@ -15,32 +15,32 @@ interface DataType {
 }
 
 const innovative_data: DataType = {
-	title_1: `Innovative Solutions for Modern Digital Needs`,
-	des_1: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising,`,
-	title_2: `Creating a Strong Brand Identity`,
-	des_2: `Welcome to our digital agency! We spec ialize in helping businesses like yours succeed Well come to our digital agency`,
+	title_1: `Регистрируем сделку`,
+	des_1: `Регистрация проходит от 7 до 14 дней (в зависимости от региона). После регистрации права собственности вы получите выписку из ЕГРН. Штампы на договоры купли-продажи Росреестр больше не ставит. Ниже приведены способы подачи на регистрацию права собственности:`,
+	title_2: `В интернете.`,
+	des_2: ` Подать документы на регистрацию можно через портал госуслуг. Еще подачу документов на регистрацию права собственности онлайн применяют некоторые банки по договорам купли-продажи квартир своих клиентов. Но договор купли-продажи должен быть подписан квалифицированной электронной подписью всех участников сделки`,
 	features: [
 		{
 			id: 1,
-			title: `Ideation`,
-			des: `Digital of the day Mobile app excellence`,
+			title: `Нотариус`,
+			des: `Нотариусы сами отправляют в Росреестр документы на регистрацию договоров купли-продажи, которые они удостоверяют. Это бесплатно. Заплатить придется только за удостоверение договора.`,
 		},
 		{
 			id: 2,
-			title: `Ideation`,
-			des: `Digital of the day Mobile app excellence`,
+			title: `Почтовое отправление`,
+			des: `Отправить документы на государственную регистрацию права собственности можно по почте с описью вложения и уведомлением о вручении в офис Росреестра по месту нахождения квартиры.`,
 		},
 		{
 			id: 3,
-			title: `Ideation`,
-			des: `Digital of the day Mobile app excellence`,
+			title: `МФЦ`,
+			des: `Для физических лиц это самый простой и недорогой способ. Стоимость и условия в каждом регионе свои, их можно узнать в конкретном МФЦ.`,
 		},
 	],
 };
 
 const { title_1, des_1, title_2, des_2, features } = innovative_data;
 
-const InnovativeHomeTwo = () => {
+export const InnovativeHomeTwo = () => {
 	return (
 		<>
 			<div className="cs_height_150 cs_height_lg_60"></div>
@@ -89,5 +89,3 @@ const InnovativeHomeTwo = () => {
 		</>
 	);
 };
-
-export default InnovativeHomeTwo;

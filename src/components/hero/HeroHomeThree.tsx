@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-
-
+import img from '@/shared/assets/img/design_banner.jpg'; 
 
 type DataType = {
   title_1: string;
@@ -28,7 +27,7 @@ const HeroHomeThree = () => {
     <>
       <section>
         <div className="cs_hero cs_style2">
-          <div className="cs_hero_bg cs_bg cs_parallax_bg" style={{ backgroundImage: 'url(/assets/img/design_banner.jpg)' }}></div>
+          <div className="cs_hero_bg cs_bg cs_parallax_bg" style={{ backgroundImage: `url(${img})`}}></div>
           <div className="textupdowns">
             <div className="cs_left_text">
               <span className="cs_arrow">

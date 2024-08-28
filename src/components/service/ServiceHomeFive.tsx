@@ -1,13 +1,8 @@
-
-
-
-
 import { Link } from "react-router-dom";
 import service_data from '@/data/service_data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
-const ServiceHomeFive = () => {
+export const ServiceHomeFive = () => {
   return (
     <>
       <section>
@@ -64,5 +59,3 @@ const ServiceHomeFive = () => {
     </>
   );
 };
-
-export default ServiceHomeFive;

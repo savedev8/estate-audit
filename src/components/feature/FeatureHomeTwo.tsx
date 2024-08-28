@@ -1,7 +1,5 @@
-
-
-
-interface DataType {
+ // @ts-ignore
+ interface DataType {
   subtitle: string;
   title: string;
   des: string;
@@ -17,6 +15,7 @@ interface DataType {
 
   subtitle_2: string;
   title_2: string;
+  button: string;
 }
 
 const feature_data: DataType = {
@@ -44,11 +43,19 @@ const feature_data: DataType = {
   // for home five 
   subtitle_2: `Why Choose Us`,
   title_2: `Maximizing Your Online Presence Digital Marketing Mastery`,
-
+  button: `Learn More`,
 }
-const { subtitle, title, des, boxtitle, box_des_1, box_des_2, features, subtitle_2, title_2 } = feature_data
 
-const FeatureHomeTwo = ({ style_2 }: any) => {
+export const FeatureHomeTwo = ({ style_2, data }: { style_2?: any; data?: DataType }) => {
+  let endedData;
+  if(data) {
+    endedData = data;
+  } else {
+    endedData = feature_data;
+  }
+
+  const { subtitle, title, des, boxtitle, box_des_1, box_des_2, features, subtitle_2, title_2, button } = endedData;
+
   return (
     <>
       {style_2 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
@@ -94,7 +101,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                   </p>
                   <div className="cs_service_back_btn">
                     <a href="#" className="cs_style_1 cs_color_1">
-                      <span className="cs_font_18">Learn More</span>
+                      <span className="cs_font_18">{button}</span>
                       {' '}
                       <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +129,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
             </div>
             <div className="col-lg-4 col-12">
               <div className="cs_startup_agency">
-                {features.map((item, i) =>
+                {features?.map((item, i) =>
                   <div key={i} className="cs_startup_agency cs_card">
                     <h6>{item.title}</h6>
                     <div className="d-flex align-items-center">
@@ -159,5 +166,3 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
     </>
   );
 };
-
-export default FeatureHomeTwo;

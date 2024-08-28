@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 // import portfolio_data from '@/data/portfolio_data';
 import { Link } from "react-router-dom";
 
-import portfolio_img_6 from "@/assets/img/portfolio_1.jpg";
-import portfolio_img_7 from "@/assets/img/portfolio_2.jpg";
-import portfolio_img_8 from "@/assets/img/portfolio_3.jpg";
-import portfolio_img_9 from "@/assets/img/portfolio_5.jpg";
-import portfolio_img_10 from "@/assets/img/portfolio_6.jpg";
-import portfolio_img_11 from "@/assets/img/portfolio_7.jpg";
+import portfolio_img_6 from "@/shared/assets/img/portfolio_1.jpg";
+import portfolio_img_7 from "@/shared/assets/img/portfolio_2.jpg";
+import portfolio_img_8 from "@/shared/assets/img/portfolio_3.jpg";
+import portfolio_img_9 from "@/shared/assets/img/portfolio_5.jpg";
+import portfolio_img_10 from "@/shared/assets/img/portfolio_6.jpg";
+import portfolio_img_11 from "@/shared/assets/img/portfolio_7.jpg";
 import { AppImage } from '@/shared/ui/AppImage';
 
 
@@ -69,7 +69,7 @@ const portfolio_data: DataType[] = [
 // data
 const categories = ["All", ...new Set(portfolio_data.map((item) => item.category))];
 
-const Portfolio = () => {
+export const Portfolio = () => {
 
   const [activeCategory, setActiveCategory] = useState("All");
   const [items, setItems] = useState(portfolio_data);
@@ -91,6 +91,8 @@ const Portfolio = () => {
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
 
+
+     {/* TITLE */}
       <section>
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1">
@@ -108,6 +110,8 @@ const Portfolio = () => {
       <section className="cs_ui_design">
         <div className="container">
           <div>
+
+            {/* CATEGORIES */}
             <div className="row">
               <div className="cs_isotop_item_menu col-md-12">
                 <ul className="anim_div_ShowZoom style_active">
@@ -124,6 +128,8 @@ const Portfolio = () => {
                 </ul>
               </div>
             </div>
+
+            {/* CARDS */}
             <div className="cs_isotop_items_details row">
               {items.map((item, i) => (
                 <div key={i} className="col-md-4 cs_item cs_ui_design cs_development">
@@ -147,6 +153,8 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="cs_height_70 cs_height_lg_30"></div>
+
+          {/* LOAD MORE BUTTON переиспользуемый */}
           <div>
             <div className="cs_hero_btn_wrap text-center">
               <div className="cs_round_btn_wrap">
@@ -159,5 +167,3 @@ const Portfolio = () => {
     </>
   );
 };
-
-export default Portfolio;

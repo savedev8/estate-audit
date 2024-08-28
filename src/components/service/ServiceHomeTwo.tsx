@@ -1,7 +1,5 @@
-
-
 import { Link } from "react-router-dom";
-import bg_img from "@/assets/img/cp_services.jpg";
+import bg_img from "@/shared/assets/img/cp_services.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
 
 const service_content = {
@@ -33,7 +31,7 @@ const service_content = {
 
 const { sub_title, title, service_data } = service_content
 
-const ServiceHomeTwo = () => {
+export const ServiceHomeTwo = () => {
   return (
     <>
       <div className="cs_height_110"></div>
@@ -111,5 +109,3 @@ const ServiceHomeTwo = () => {
     </>
   );
 };
-
-export default ServiceHomeTwo;

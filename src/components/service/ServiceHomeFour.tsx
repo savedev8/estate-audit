@@ -1,40 +1,46 @@
-
-
-import image from "@/assets/img/cp_services.jpg";
+import { ScrollContext } from "@/app/providers/ScrollProvider";
+import image from "@/shared/assets/img/cp_services.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 
 const service_content = {
-  title: 'Our Services',
-  des: 'Comprehensive Digital Services & Transformation',
+  title: 'Условия сделки',
+  des: 'Квартира выбрана? Обсудим условия сделки и подтвердим наши намерения.',
   service_data: [
     {
       id: 1,
-      title: " UI/UX Design",
+      title: "Последняя цена и торг",
     },
     {
       id: 2,
-      title: " Branding Design",
+      title: "Форма расчётов",
     },
     {
       id: 3,
-      title: " Marketing Asset",
+      title: "Cроки оформления и регистрации сделки",
     },
     {
       id: 4,
-      title: " Development",
-    },
-    {
-      id: 5,
-      title: " Creative Art",
+      title: "Проверка базовых документов перед авансированием",
     },
   ]
 }
 const { title, des, service_data } = service_content
 
-const ServiceHomeFour = () => {
+export const ServiceHomeFour = () => {
+  const context = useContext(ScrollContext);
+  const scrollRefs: { [key: string]: (() => void) | undefined } = {
+    1: context?.scrollToRefFirst,
+    2: context?.scrollToRefSecond,
+    3: context?.scrollToRefThird,
+    4: context?.scrollToRefFourth,
+  };
+
   return (
     <>
+    <div className="cs_height_150 cs_height_lg_60"></div>
       <section>
         <div className="container">
           <div className="cs_section_heading cs_style_1">
@@ -56,9 +62,11 @@ const ServiceHomeFour = () => {
             </div>
             <div className="col-md-6">
               <div className="anim_div_ShowRightSide">
-                {service_data.map((item, i) =>
-                  <div key={i} className="cs_creative_protfolio cs_card_style_change">
-                    <div className="cs_card cs_style_1 cs_color_1">
+                {service_data.map((item, i) => {
+                  const scrollToRef = scrollRefs[item.id.toString()];
+                  return (
+                  <div key={item.id} className="cs_creative_protfolio cs_card_style_change">
+                    <div className="cs_card cs_style_1 cs_color_1" onClick={scrollToRef}>
                       <div className="cs_card_right">
                         <div className="cs_card_right_in">
                           <h2 className="cs_card_title">
@@ -69,7 +77,7 @@ const ServiceHomeFour = () => {
                         </div>
                       </div>
                       <div className="cs_card_link_wrap">
-                        <a href="#" className="cs_card_link">
+                        <a href="" className="cs_card_link">
                           <span>
                             <svg width="20" height="20" viewBox="0 0 30 30" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -97,8 +105,7 @@ const ServiceHomeFour = () => {
                     </div>
                     <div className="cs_hr_design"></div>
                   </div>
-                )}
-
+                )})}
               </div>
             </div>
           </div>
@@ -109,4 +116,4 @@ const ServiceHomeFour = () => {
   );
 };
 
-export default ServiceHomeFour;
+

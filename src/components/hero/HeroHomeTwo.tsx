@@ -6,7 +6,7 @@ const hero_data = {
 };
 const { subtitle, title_1, title_2, des } = hero_data;
 
-const HeroHomeTwo = () => {
+export const HeroHomeTwo = () => {
 	return (
 		<>
 			<div className="cs_height_219 cs_height_lg_120"></div>
@@ -33,4 +33,3 @@ const HeroHomeTwo = () => {
 	);
 };
 
-export default HeroHomeTwo;

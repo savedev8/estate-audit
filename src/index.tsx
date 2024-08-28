@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 // import { StoreProvider } from '@/app/providers/StoreProvider';
 import { App } from './app/App';
 import '@/app/styles/index.scss';
+import { ScrollProvider } from './app/providers/ScrollProvider/ui/ScrollProvider';
 // import './shared/config/i18n/i18n';
 // import { ErrorBoundary } from './app/providers/ErrorBoundary';
 
@@ -19,6 +20,7 @@ const root = createRoot(container);
 
 root.render(
     <BrowserRouter>
+    <ScrollProvider>
         {/* <StoreProvider>
             <ErrorBoundary>
                 <ThemeProvider> */}
@@ -26,5 +28,6 @@ root.render(
                 {/* </ThemeProvider>
             </ErrorBoundary>
         </StoreProvider> */}
+        </ScrollProvider>
     </BrowserRouter>,
 );

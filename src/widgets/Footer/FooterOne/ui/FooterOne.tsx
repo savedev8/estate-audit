@@ -22,12 +22,12 @@ const footer_data: DataType = {
   location: `46 JOHN ST TORONTO ON M5V 3W2`,
   footer_info: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development.`,
   links: [
-    { title: `HOME`, link: "/" },
-    { title: `ABOUT`, link: "/about" },
-    { title: `SERVICES`, link: "/service" },
-    { title: `PORTFOLIO`, link: "/portfolio" },
-    { title: `BLOG`, link: "/blog" },
-    { title: `CONTACT US`, link: "/contact" },
+    { title: `ГЛАВНАЯ`, link: "/" },
+    { title: `ЭТАПЫ ПОКУПКИ`, link: "/" },
+    // { title: `SERVICES`, link: "/service" },
+    // { title: `PORTFOLIO`, link: "/portfolio" },
+    // { title: `BLOG`, link: "/blog" },
+    { title: `ЧАСТЫЕ ВОПРОСЫ`, link: "/faq" },
   ]
 }
 const { footer_info, email, links, location, phone } = footer_data
@@ -36,18 +36,18 @@ export const FooterOne = () => {
   return (
     <>
       <footer className="cs_footer cs_primary_bg">
-        <div className="cs_height_150 cs_height_lg_60"></div>
+        {/* <div className="cs_height_150 cs_height_lg_60"></div> */}
         <div className="container">
           <div className="row">
-            <div className="col-lg-5">
+            {/* <div className="col-lg-5">
               <div className="cs_footer_info">
                 {/* <AppImage src={footer_logo} alt="Logo" /> */}
-                <p>{footer_info}</p>
+                {/* <p>{footer_info}</p>
                 <a href={`mailto:${email}`}
                   className="cs_primary_font anim_text_upanddowns"><span>{email}</span></a>
               </div>
-            </div>
-            <div className="col-lg-6 offset-lg-1">
+            </div> */}
+            {/* <div className="col-lg-6 offset-lg-1">
               <div className="cs_footer_social">
                 <SocialLinks />
               </div>
@@ -96,18 +96,18 @@ export const FooterOne = () => {
                   {email}
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
-          <div className="cs_height_90 cs_height_lg_60"></div>
+          {/* <div className="cs_height_90 cs_height_lg_60"></div> */}
           <ul className="cs_footer_nav">
             {links.map((item, index) => (
               <li key={index}><Link to={item.link}>{item.title}</Link></li>
             ))}
           </ul>
         </div>
-        <div className="cs_copyright text-center">
+        {/* <div className="cs_copyright text-center">
           <div className="container"> <CopyRight /> </div>
-        </div>
+        </div> */}
       </footer>
     </>
   );

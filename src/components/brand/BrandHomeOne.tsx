@@ -1,8 +1,7 @@
+import * as cls from './BrandHomeOne.module.scss';
 
 type SVGComponent = FC<SVGProps<SVGSVGElement>>;
-
-// Определите тип данных как объединение строк и компонентов SVG
-type DataType = (string | SVGComponent)[];
+type DataType = SVGComponent[];
 
 import brand_img_1 from "@/shared/assets/img/partner_1.svg"
 import brand_img_2 from "@/shared/assets/img/partner_2.svg"
@@ -35,8 +34,8 @@ import brand_thumb_6 from "@/shared/assets/img/partner_14.svg"
 import brand_thumb_7 from "@/shared/assets/img/partner_15.svg"
 import brand_thumb_8 from "@/shared/assets/img/partner_1.svg"
 import brand_thumb_9 from "@/shared/assets/img/partner_3.svg"
-import { AppImage } from '@/shared/ui/AppImage';
-import { FC, SVGProps, VFC } from "react";
+import { FC, SVGProps } from "react";
+import { Icon } from "@/shared/ui/Icon";
 
 
 const brand_thumb_data: DataType = [
@@ -52,10 +51,9 @@ const brand_thumb_data: DataType = [
 ]
 
 
-const BrandHomeOne = ({ style_2 }: any) => {
+export const BrandHomeOne = ({ style_2 }: any) => {
   return (
     <> 
-      
       {style_2 ?
         <>
           <div className="cs_height_150 cs_height_lg_60"></div>
@@ -73,7 +71,7 @@ const BrandHomeOne = ({ style_2 }: any) => {
             <div className="cs_partner_logo_wrap">
               {brand_data.map((item, i) =>
                 <div key={i} className="cs_partner_logo">
-                  <AppImage src={`${item}`} alt="image-here" />
+                  <Icon Svg={item} className={cls.Brand} />
                 </div>
               )}
             </div>
@@ -82,7 +80,7 @@ const BrandHomeOne = ({ style_2 }: any) => {
             <div className="cs_partner_logo_wrap">
               {brand_data.map((item, i) =>
                 <div key={i} className="cs_partner_logo">
-                  <AppImage src={`${item}`} alt="image-here" />
+                  <Icon Svg={item} className={cls.Brand} />
                 </div>
               )}
             </div>
@@ -96,7 +94,7 @@ const BrandHomeOne = ({ style_2 }: any) => {
             <div className="cs_partner_logo_wrap">
               {brand_thumb_data.map((item, i) =>
                 <div key={i} className="cs_partner_logo">
-                  <AppImage src={`${item}`} alt="image-here" />
+                  <Icon Svg={item} className={cls.Brand} />
                 </div>
               )}
             </div>
@@ -105,7 +103,7 @@ const BrandHomeOne = ({ style_2 }: any) => {
             <div className="cs_partner_logo_wrap">
               {brand_thumb_data.map((item, i) =>
                 <div key={i} className="cs_partner_logo">
-                  <AppImage src={`${item}`} alt="image-here" />
+                  <Icon Svg={item} className={cls.Brand} />
                 </div>
               )}
             </div>
@@ -119,5 +117,3 @@ const BrandHomeOne = ({ style_2 }: any) => {
     </>
   );
 };
-
-export default BrandHomeOne;

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import facebook from "@/assets/img/fb_1.png"
-import linedin from "@/assets/img/linedin_1.png"
-import twitter from "@/assets/img/twitter_1.png"
-import dm_banner from "@/assets/img/dm_banner.png"
+import facebook from "@/shared/assets/img/fb_1.png"
+import linedin from "@/shared/assets/img/linedin_1.png"
+import twitter from "@/shared/assets/img/twitter_1.png"
+import dm_banner from "@/shared/assets/img/dm_banner.png"
 import { AppImage } from "@/shared/ui/AppImage";
 
 interface DataType {
@@ -43,7 +43,7 @@ const hero_data: DataType = {
 
 const { title_1, title_2, bt_text, des, social_links } = hero_data
 
-const HeroHomeFive = () => {
+export const HeroHomeFive = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -108,5 +108,3 @@ const HeroHomeFive = () => {
     </>
   );
 };
-
-export default HeroHomeFive;

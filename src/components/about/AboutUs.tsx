@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import img from '@/shared/assets/img/about_projec_ttitie_bg.jpg';
 
-const AboutUs = () => {
+export const AboutUs = () => {
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
       <section>
-        <div className="cs_bg cs_bg_img_about_titile" style={{ backgroundImage: 'url(/assets/img/about_projec_ttitie_bg.jpg)' }}>
+        <div className="cs_bg cs_bg_img_about_titile" style={{ backgroundImage: `url(${img})` }}>
           <div className="container">
             <div className="cs_learning_project">
               <div className="cs_section_heading cs_style_1">
@@ -33,5 +34,3 @@ const AboutUs = () => {
     </>
   );
 };
-
-export default AboutUs;

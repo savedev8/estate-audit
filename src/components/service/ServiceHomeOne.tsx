@@ -1,57 +1,88 @@
-
-
 import { Link } from "react-router-dom";
-
+import img from '@/shared/assets/img/hero_img_1.jpg';
+import { useContext } from "react";
+import { ScrollContext } from "@/app/providers/ScrollProvider";
 
 interface DataType {
   id: number;
   title: string;
   des: string;
+  link?: string;
 }[]
 
 const service_data: DataType[] = [
   {
     id: 1,
-    title: `Application Development`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: `Выбор квартиры`,
+    des: `Выясняем потребности и предпочтения к объекту, устанавливаем бюджет, смотрим объявления и уточняем детали по телефону, отправляемся на просмотры.`,
+    link: '/service-details'
   },
   {
     id: 2,
-    title: `Web Development`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: `Условия сделки`,
+    des: `Квартиру выбрали – обсуждаем условия сделки`,
+    link: '/creative-portfolio'
   },
   {
     id: 3,
-    title: `Digital Services`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: `Внесение аванса`,
+    des: `Фиксируем намерения.`,
+    link: `/marketing-agency`,
   },
   {
     id: 4,
-    title: `Digital Product Design`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: `Проверка квартиры`,
+    des: `Проверяем квартиру и продавца`,
+    link: `/blog`,
+  },
+  {
+    id: 5,
+    title: `Подписание договора`,
+    des: `Подписываем договор купли-продажи.`,
+    link: `/team-details`,
+  },
+  {
+    id: 6,
+    title: `Регистрирация сделки`,
+    des: `Регистрируем сделку.`,
+    link: `/startup-agency`,
+  },
+  {
+    id: 7,
+    title: `Расчёт за квартиру`,
+    des: `Рассчитываемся за квартиру.`,
+    link: '/design-studio',
+  },
+  {
+    id: 8,
+    title: `Приёмка квартиры`,
+    des: `Принимаем квартиру.`,
+    link: `/blog-details`,
   },
 
 ]
 
-const ServiceHomeOne = () => {
+export const ServiceHomeOne = () => {
+  const context = useContext(ScrollContext);
+  const firstRef = context?.firstRef;
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
-      <section className="cs_primary_bg position-relative">
+      <section className="cs_primary_bg position-relative" id="target">
         <div className="cs_height_150 cs_height_lg_60"></div>
-        <div className="container">
+        <div className="container" ref={firstRef}>
           <div className="cs_section_heading cs_style_1 cs_type_1 cs_color_1">
             <div className="cs_section_heading_text">
               <div className="cs_section_subtitle anim_div_ShowZoom">
-                Our Services
+                Все этапы
               </div>
               <h2 className="cs_section_title anim_heading_title">
-                Comprehensive Digital Strategy Transformation
+                Через какие этапы необходимо пройти чтобы получить желаемый объект:
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
-              <Link to="/service" className="cs_btn cs_style_1 cs_color_1">
-                <span>View Services</span>
+              <Link to="/faq" className="cs_btn cs_style_1 cs_color_1">
+                <span>Частые вопросы</span>
                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -66,14 +97,14 @@ const ServiceHomeOne = () => {
             {service_data.map((item, i) => (
               <div key={i} className="cs_card cs_style_1 cs_color_1 anim_div_ShowDowns">
                 <div className="cs_card_left">
-                  <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url(/assets/img/hero_img_1.jpg)` }}>
+                  <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url(${img})` }}>
                     0{i + 1}
                   </div>
                 </div>
                 <div className="cs_card_right">
                   <div className="cs_card_right_in">
                     <h2 className="cs_card_title">
-                      <Link to="/service-details">{item.title}</Link>
+                      <Link to={item.link || `/service-details`}>{item.title}</Link>
                     </h2>
                     <div className="cs_card_subtitle">
                       {item.des}
@@ -81,7 +112,7 @@ const ServiceHomeOne = () => {
                   </div>
                 </div>
                 <div className="cs_card_link_wrap">
-                  <Link to="/service-details" className="cs_card_link">
+                  <Link to={item.link || `/service-details`} className="cs_card_link">
                     <span>
                       <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -113,9 +144,6 @@ const ServiceHomeOne = () => {
         </div>
         <div className="cs_height_100 cs_height_lg_30"></div>
       </section>
-
     </>
   );
 };
-
-export default ServiceHomeOne;

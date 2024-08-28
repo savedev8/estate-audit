@@ -1,10 +1,9 @@
-import portfolio_img_1 from "@/assets/img/project_successfull_1.jpg";
-import portfolio_img_2 from "@/assets/img/project_successfull_2.jpg";
-import portfolio_img_3 from "@/assets/img/project_successfull_3.jpg";
-import portfolio_img_4 from "@/assets/img/project_successfull_4.jpg";
-import portfolio_img_5 from "@/assets/img/project_successfull_5.jpg";
+import portfolio_img_1 from "@/shared/assets/img/project_successfull_1.jpg";
+import portfolio_img_2 from "@/shared/assets/img/project_successfull_2.jpg";
+import portfolio_img_3 from "@/shared/assets/img/project_successfull_3.jpg";
+import portfolio_img_4 from "@/shared/assets/img/project_successfull_4.jpg";
+import portfolio_img_5 from "@/shared/assets/img/project_successfull_5.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
-
 
 interface PortfolioDataType {
 	id: number;

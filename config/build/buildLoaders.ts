@@ -39,7 +39,7 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     // };
 
     const fileLoader = {
-        test: /\.(png|jpe?g|gif|woff2|woff)$/i,
+        test: /\.(png|jpe?g|gif|woff2|woff|docx|pdf|webp)$/i,
         use: [
             {
                 loader: 'file-loader',
@@ -49,10 +49,12 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 
     return [
         fileLoader,
+        // fontsLoader,
         svgLoader,
         codeBabelLoader,
         tsxCodeBabelLoader,
         // typescriptLoader,
         cssLoader,
+
     ];
 }

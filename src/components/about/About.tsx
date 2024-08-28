@@ -17,7 +17,7 @@ const about_content: DataType = {
 }
 const { subtitle, title, des } = about_content
 
-const About = () => {
+export const About = () => {
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
@@ -83,5 +83,3 @@ const About = () => {
     </>
   );
 };
-
-export default About;

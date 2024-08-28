@@ -1,5 +1,3 @@
-
-
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -49,7 +47,7 @@ const portfolio_slider: DataType[] = [
 ]
 
 
-const PortfolioHomeOne = () => {
+export const PortfolioHomeOne = () => {
   return (
     <>
       <div className="cs_horizontal_scroll_wrap">
@@ -103,5 +101,3 @@ const PortfolioHomeOne = () => {
     </>
   );
 };
-
-export default PortfolioHomeOne;

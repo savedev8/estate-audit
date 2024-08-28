@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import VideoPopup from '../modals/VideoPopup';
+import img from '@/shared/assets/img/video_block_2.jpg';
 
-const VideoHomeTwo = () => {
+export const VideoHomeTwo = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
 
   return (
@@ -10,7 +11,7 @@ const VideoHomeTwo = () => {
       <div className="cs_parallax">
         <a onClick={() => setIsVideoOpen(true)}  
           className="cs_digital_agency cs_video_block cs_style1 cs_video_open cs_bg cs_parallax_bg"
-          style={{ backgroundImage: `url(/assets/img/video_block_2.jpg)`,  cursor: "pointer" }}>
+          style={{ backgroundImage: `url(${img})`,  cursor: "pointer" }}>
           <span className="cs_player_btn cs_accent_color">
             <span></span>
           </span>
@@ -27,5 +28,3 @@ const VideoHomeTwo = () => {
     </>
   );
 };
-
-export default VideoHomeTwo;

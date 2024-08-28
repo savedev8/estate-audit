@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 interface DataType {
@@ -7,7 +8,7 @@ interface DataType {
   has_dropdown: boolean;
   sub_menu?: {
     id: number;
-    title: string;
+    title: string | ReactNode;
     link: string;
   }[]
 }
@@ -16,13 +17,13 @@ interface DataType {
 const menu_data: DataType[] = [
   {
     id: 1,
-    title: "Home",
+    title: "Главная",
     link: "/",
     has_dropdown: true,
     sub_menu: [
       {
         id: 1,
-        title: "Digital Agency",
+        title: "Главная",
         link: "/",
       },
       {
@@ -37,122 +38,130 @@ const menu_data: DataType[] = [
       },
       {
         id: 4,
-        title: "Creative Protfolio",
-        link: "/creative-protfolio",
+        title: "Creative Portfolio + Листинг",
+        link: "/creative-portfolio",
       },
       {
         id: 5,
         title: "Marketing Agency",
         link: "/marketing-agency",
       },
-    ]
-  },
-  {
-    id: 2,
-    title: "About",
-    link: '/about',
-    has_dropdown: false
-  },
-  {
-    id: 3,
-    title: "Pages",
-    link: "/about",
-    has_dropdown: true,
-    sub_menu: [
       {
-        id: 1,
+        id: 6,
         title: "About",
-        link: "/about",
+        link: '/about',
       },
       {
-        id: 2,
-        title: "Team",
-        link: "/team",
+        id: 7,
+        title: "Services",
+        link: "/service",
       },
       {
-        id: 3,
-        title: "Team Details",
-        link: "/team-details",
+        id: 8,
+        title: "Services Details",
+        link: "/service-details",
       },
       {
-        id: 4,
+        id: 9,
+        title: "Листинг с табами",
+        link: "/portfolio",
+      },
+      {
+        id: 10,
+        title: "Portfolio Details",
+        link: "/portfolio-details",
+      },
+      {
+        id: 11,
+        title: "Листинг",
+        link: "/blog",
+      },
+      {
+        id: 12,
+        title: "Blog Details",
+        link: "/blog-details",
+      },
+      {
+        id: 13,
         title: "Contact",
         link: "/contact",
       },
       {
-        id: 5,
+        id: 14,
+        title: "Листинг",
+        link: "/team",
+      },
+      {
+        id: 15,
+        title: "Team Details",
+        link: "/team-details",
+      },
+      {
+        id: 16,
         title: "Faq",
         link: "/faq",
       },
       {
-        id: 6,
+        id: 17,
         title: "Error",
         link: "/error",
       }
     ]
   },
   {
-    id: 4,
-    title: "Services",
-    link: "/service",
+    id: 2,
+    title: "Этапы покупки",
+    link: "/",
     has_dropdown: true,
     sub_menu: [
       {
         id: 1,
-        title: "Services",
-        link: "/service",
-      },
-      {
-        id: 2,
-        title: "Services Details",
+        title:<><strong>Этап №1: </strong>Выбор квартиры</>,
         link: "/service-details",
-      }
-    ]
-  },
-  {
-    id: 5,
-    title: "Portfolio",
-    link: "/portfolio",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Portfolio",
-        link: "/portfolio",
       },
       {
         id: 2,
-        title: "Portfolio Details",
-        link: "/portfolio-details",
-      }
-    ]
-  },
-  {
-    id: 6,
-    title: "Blog",
-    link: "/blog",
-    has_dropdown: true,
-    sub_menu: [
+        title:<><strong>Этап №2: </strong>Условия сделки</>,
+        link: "/creative-portfolio",
+      },
       {
-        id: 1,
-        title: "Blog",
+        id: 3,
+        title:<><strong>Этап №3: </strong>Внесение аванса</>,
+        link: "/marketing-agency",
+      },
+      {
+        id: 4,
+        title:<><strong>Этап №4: </strong>Проверка квартиры</>,
         link: "/blog",
       },
       {
-        id: 2,
-        title: "Blog Details",
-        link: "/blog-details",
-      }
+        id: 5,
+        title:<><strong>Этап №5: </strong>Подписание договора</>,
+        link: "/team-details",
+      },
+      {
+        id: 6,
+        title: <><strong>Этап №6: </strong>Регистрация сделки</>,
+        link: "/startup-agency",
+      },
+      {
+        id: 7,
+        title:<><strong>Этап №7: </strong>Расчёт за квартиру</>,
+        link: "/design-studio",
+      },
+      {
+        id: 8,
+        title:<><strong>Этап №8: </strong>Приёмка квартиры</>,
+        link: `/blog-details`,
+      }    
     ]
   },
   {
-    id: 7,
-    title: "Contact",
-    link: "/contact",
+    id: 3,
+    title: "Частые вопросы",
+    link: "/faq",
     has_dropdown: false,
   }
-
-
 ]
 
 

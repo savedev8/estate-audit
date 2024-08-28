@@ -1,11 +1,13 @@
-
 import UseSticky from "@/hooks/UseSticky";
-import { useEffect, useState } from "react";
-import logo from "@/shared/assets/img/logo.svg";
+import { ReactNode, useEffect, useState } from "react";
+// import  logo from "@/shared/assets/img/flat_guide.svg";
+import  logo from "@/shared/assets/img/logo_transparent_1.png";
 import Logo_white from "@/shared/assets/img/Logo_white.png";
 import { Link } from "react-router-dom";
 import { AppImage } from "@/shared/ui/AppImage";
 import { HeaderMobileMenu as MobileMenu } from '@/widgets/Header/HeaderMobileMenu';
+import { Icon } from "@/shared/ui/Icon";
+import * as cls from './HeaderOne.module.scss';
 
 interface DataType {
 	id: number;
@@ -14,160 +16,163 @@ interface DataType {
 	has_dropdown: boolean;
 	sub_menu?: {
 		id: number;
-		title: string;
+		title: string | ReactNode;
 		link: string;
 	}[]
 }
-
-
 const menu_data: DataType[] = [
 	{
-		id: 1,
-		title: "Home",
-		link: "/",
-		has_dropdown: true,
-		sub_menu: [
-			{
-				id: 1,
-				title: "Digital Agency",
-				link: "/",
-			},
-			{
-				id: 2,
-				title: "Startup Agency",
-				link: "/startup-agency",
-			},
-			{
-				id: 3,
-				title: "Design Studio",
-				link: "/design-studio",
-			},
-			{
-				id: 4,
-				title: "Creative Protfolio",
-				link: "/creative-protfolio",
-			},
-			{
-				id: 5,
-				title: "Marketing Agency",
-				link: "/marketing-agency",
-			},
-		]
+	  id: 1,
+	  title: "Главная",
+	  link: "/",
+	  has_dropdown: true,
+	  sub_menu: [
+		{
+		  id: 1,
+		  title: "Главная",
+		  link: "/",
+		},
+		{
+		  id: 2,
+		  title: "Startup Agency",
+		  link: "/startup-agency",
+		},
+		{
+		  id: 3,
+		  title: "Design Studio",
+		  link: "/design-studio",
+		},
+		{
+		  id: 4,
+		  title: "Creative Portfolio + листинг",
+		  link: "/creative-portfolio",
+		},
+		{
+		  id: 5,
+		  title: "Marketing Agency",
+		  link: "/marketing-agency",
+		},
+		{
+		  id: 6,
+		  title: "About",
+		  link: '/about',
+		},
+		{
+		  id: 7,
+		  title: "Services",
+		  link: "/service",
+		},
+		{
+		  id: 8,
+		  title: "Services Details",
+		  link: "/service-details",
+		},
+		{
+		  id: 9,
+		  title: "Листинг с табами",
+		  link: "/portfolio",
+		},
+		{
+		  id: 10,
+		  title: "Portfolio Details",
+		  link: "/portfolio-details",
+		},
+		{
+		  id: 11,
+		  title: "Листинг",
+		  link: "/blog",
+		},
+		{
+		  id: 12,
+		  title: "Blog Details",
+		  link: "/blog-details",
+		},
+		{
+		  id: 13,
+		  title: "Contact",
+		  link: "/contact",
+		},
+		{
+		  id: 14,
+		  title: "Листинг",
+		  link: "/team",
+		},
+		{
+		  id: 15,
+		  title: "Team Details",
+		  link: "/team-details",
+		},
+		{
+		  id: 16,
+		  title: "Faq",
+		  link: "/faq",
+		},
+		{
+		  id: 17,
+		  title: "Error",
+		  link: "/error",
+		}
+	  ]
 	},
 	{
-		id: 2,
-		title: "About",
-		link: '/about',
-		has_dropdown: false
+	  id: 2,
+	  title: "Этапы покупки",
+	  link: "/",
+	  has_dropdown: true,
+	  sub_menu: [
+		{
+		  id: 1,
+		  title:<><strong>Этап №1: </strong>Выбор квартиры</>,
+		  link: "/service-details",
+		},
+		{
+		  id: 2,
+		  title:<><strong>Этап №2: </strong>Условия сделки</>,
+		  link: "/creative-portfolio",
+		},
+		{
+		  id: 3,
+		  title:<><strong>Этап №3: </strong>Внесение аванса</>,
+		  link: "/marketing-agency",
+		},
+		{
+		  id: 4,
+		  title:<><strong>Этап №4: </strong>Проверка квартиры</>,
+		  link: "/blog",
+		},
+		{
+		  id: 5,
+		  title:<><strong>Этап №5: </strong>Подписание договора</>,
+		  link: "/team-details",
+		},
+		{
+		  id: 6,
+		  title: <><strong>Этап №6: </strong>Регистрация сделки</>,
+		  link: "/startup-agency",
+		},
+		{
+		  id: 7,
+		  title:<><strong>Этап №7: </strong>Расчёт за квартиру</>,
+		  link: "/design-studio",
+		},
+		{
+		  id: 8,
+		  title:<><strong>Этап №8: </strong>Приёмка квартиры</>,
+		  link: `/blog-details`,
+		}    
+	  ]
 	},
 	{
-		id: 3,
-		title: "Pages",
-		link: "/about",
-		has_dropdown: true,
-		sub_menu: [
-			{
-				id: 1,
-				title: "About",
-				link: "/about",
-			},
-			{
-				id: 2,
-				title: "Team",
-				link: "/team",
-			},
-			{
-				id: 3,
-				title: "Team Details",
-				link: "/team-details",
-			},
-			{
-				id: 4,
-				title: "Contact",
-				link: "/contact",
-			},
-			{
-				id: 5,
-				title: "Faq",
-				link: "/faq",
-			},
-			{
-				id: 6,
-				title: "Error",
-				link: "/error",
-			}
-		]
-	},
-	{
-		id: 4,
-		title: "Services",
-		link: "/service",
-		has_dropdown: true,
-		sub_menu: [
-			{
-				id: 1,
-				title: "Services",
-				link: "/service",
-			},
-			{
-				id: 2,
-				title: "Services Details",
-				link: "/service-details",
-			}
-		]
-	},
-	{
-		id: 5,
-		title: "Portfolio",
-		link: "/portfolio",
-		has_dropdown: true,
-		sub_menu: [
-			{
-				id: 1,
-				title: "Portfolio",
-				link: "/portfolio",
-			},
-			{
-				id: 2,
-				title: "Portfolio Details",
-				link: "/portfolio-details",
-			}
-		]
-	},
-	{
-		id: 6,
-		title: "Blog",
-		link: "/blog",
-		has_dropdown: true,
-		sub_menu: [
-			{
-				id: 1,
-				title: "Blog",
-				link: "/blog",
-			},
-			{
-				id: 2,
-				title: "Blog Details",
-				link: "/blog-details",
-			}
-		]
-	},
-	{
-		id: 7,
-		title: "Contact",
-		link: "/contact",
-		has_dropdown: false,
+	  id: 3,
+	  title: "Частые вопросы",
+	  link: "/faq",
+	  has_dropdown: false,
 	}
-
-
-]
+  ]
 
 
 export const HeaderOne = () => {
 	const { sticky } = UseSticky()
-
-
-
 	const [active, setActive] = useState<Boolean>(false);
 	const handleActive = () => {
 		setActive(!active)
@@ -230,12 +235,16 @@ export const HeaderOne = () => {
 				<div className="cs_main_header">
 					<div className="container">
 						<div className="cs_main_header_in">
+							{/* НУЖНА СМЕНА ЛОГОТИПА */}
 							<div className="cs_main_header_left">
+								{/* <Link className="cs_site_branding logo-dark" to="/">
+									<Icon Svg={logo} className={cls.DarkBtn} />
+								</Link> */}
 								<Link className="cs_site_branding logo-dark" to="/">
-									{/* <AppImage src={logo} alt="Logo" /> */}
+									<AppImage src={logo} alt="Logo" className={cls.DarkBtn} />
 								</Link>
 								<Link className="cs_site_branding logo-white" to="/">
-									<AppImage src={Logo_white} alt="Logo" />
+									<AppImage src={logo} alt="Logo" className={cls.DarkBtn} />
 								</Link>
 							</div>
 							<div className="cs_main_header_right">

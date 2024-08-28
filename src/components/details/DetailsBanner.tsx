@@ -1,8 +1,8 @@
-import service_slider_1 from "@/assets/img/service_slider_1.jpg";
-import service_slider_2 from "@/assets/img/service_slider_2.jpg";
+import service_slider_1 from "@/shared/assets/img/service_slider_1.jpg";
+import service_slider_2 from "@/shared/assets/img/service_slider_2.jpg";
 import { AppImage } from "@/shared/ui/AppImage";
 
-const DetailsBanner = () => {
+export const DetailsBanner = () => {
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
@@ -19,5 +19,3 @@ const DetailsBanner = () => {
     </>
   );
 };
-
-export default DetailsBanner;

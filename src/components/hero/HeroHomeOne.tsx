@@ -1,31 +1,35 @@
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from '@/shared/assets/img/hero_img_1.jpg';
+import { ScrollContext } from "@/app/providers/ScrollProvider";
+import { useContext } from "react";
 
 
 const hero_slider = [
   {
     img: img1,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+    sub_title: "Этапы покупки квартиры на вторичном рынке",
+    title: "Простые шаги для приобретения собственного жилья",
+    des: `Разберём все этапы сделок с недвижимостью на вторичном рынке, включая возможные подводные камни и необходимые документы.`
   },
-  {
-    img: img1,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
-  },
-  {
-    img: img1,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
-  },
+  // {
+  //   img: img1,
+  //   sub_title: "Creative Agency",
+  //   title: "Expert Digital Services for Your Own Business",
+  //   title: "Expert Digital Services for Your Own Business",
+  //   des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+  // },
+  // {
+  //   img: img1,
+  //   sub_title: "Creative Agency",
+  //   des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+  // },
 ]
 
 
 export const HeroHomeOne = () => {
+  const context = useContext(ScrollContext);
+  const scrollToRefFirst = context?.scrollToRefFirst;
   return (
     <>
       <Swiper
@@ -61,10 +65,10 @@ export const HeroHomeOne = () => {
                     <div className="cs_height_65 cs_height_lg_40"></div>
                     <div className="cs_hero_btn_wrap">
                       <div className="cs_round_btn_wrap">
-                        <Link to="/portfolio"
+                        <Link to="" onClick={scrollToRefFirst}
                           className="cs_hero_btn cs_round_btn btn-item"><span></span>
-                          Our
-                          Projects</Link>
+                          Все этапы
+                        </Link>
                       </div>
                     </div>
                   </div>
