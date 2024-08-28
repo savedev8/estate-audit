@@ -64,7 +64,7 @@ export const Text = (props: TextProps) => {
           // 'data-testid': dataTestId = 'Text',
       } = props;
       const currentRef = refs[id] || null;
-      console.log(refs);
+  
   
 
     // const HeaderTag = mapSizeToHeaderTag[size];

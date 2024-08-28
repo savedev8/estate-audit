@@ -51,7 +51,7 @@ export const FaqArea = () => {
           <div className="cs_section_heading_text">
             <div className="mb-3 anim_text_writting">FAQ</div>
             <h2 className="cs_section_title anim_text_writting">
-              Frequently Asked Questions
+              Часто задаваемые вопросы при сделках с недвижимостью
             </h2>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 interface DataType {
@@ -7,7 +8,7 @@ interface DataType {
   has_dropdown: boolean;
   sub_menu?: {
     id: number;
-    title: string;
+    title: string | ReactNode;
     link: string;
   }[]
 }
@@ -115,43 +116,43 @@ const menu_data: DataType[] = [
     sub_menu: [
       {
         id: 1,
-        title: "Выбор квартиры",
+        title:<><strong>Этап №1: </strong>Выбор квартиры</>,
         link: "/service-details",
       },
       {
         id: 2,
-        title: "Условия сделки",
+        title:<><strong>Этап №2: </strong>Условия сделки</>,
         link: "/creative-portfolio",
       },
       {
         id: 3,
-        title: "Внесение аванса",
+        title:<><strong>Этап №3: </strong>Внесение аванса</>,
         link: "/marketing-agency",
       },
       {
         id: 4,
-        title: "Проверка квартиры",
+        title:<><strong>Этап №4: </strong>Проверка квартиры</>,
         link: "/blog",
       },
       {
         id: 5,
-        title: "Подписание договора",
+        title:<><strong>Этап №5: </strong>Подписание договора</>,
         link: "/team-details",
       },
       {
         id: 6,
-        title: "Регистрация сделки",
+        title: <><strong>Этап №6: </strong>Регистрация сделки</>,
         link: "/startup-agency",
       },
       {
         id: 7,
-        title: "Расчёт за квартиру",
+        title:<><strong>Этап №7: </strong>Расчёт за квартиру</>,
         link: "/design-studio",
       },
       {
         id: 8,
-        title: "Приёмка квартиры",
-        link: "/error",
+        title:<><strong>Этап №8: </strong>Приёмка квартиры</>,
+        link: `/blog-details`,
       }    
     ]
   },

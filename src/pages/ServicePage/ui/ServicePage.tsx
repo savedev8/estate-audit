@@ -10,6 +10,7 @@ export const metadata = {
 export const ServicePage = () => {
   return (
       <>
+      {/* переиспользуемый блок */}
         <HeroService />
         <Service />
         <Testimonial style_service={true} />

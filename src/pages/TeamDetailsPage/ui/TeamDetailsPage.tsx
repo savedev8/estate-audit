@@ -12,7 +12,7 @@ const next_data: CheckItemType = {
     title: "Договор купли-продажи подписан?",
     text: "Перейдём к этапу №6",
     // поменять
-    link: '/blog', 
+    link: '/startup-agency', 
 }
 
 export const TeamDetailsPage = () => {

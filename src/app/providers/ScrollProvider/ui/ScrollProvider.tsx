@@ -14,6 +14,8 @@ export interface ScrollContextType {
     scrollToRefFourth: () => void;
     fifthRef: React.RefObject<HTMLDivElement>;
     scrollToRefFifth: () => void;
+    sixthRef: React.RefObject<HTMLDivElement>;
+    scrollToRefSixth: () => void;
   }
   
   // Пропсы для ScrollProvider
@@ -22,7 +24,7 @@ export interface ScrollContextType {
   }
 
   export const ScrollProvider = ({ children }: ScrollProviderProps) => {
-    const sections = ['first', 'second', 'third', 'fourth', 'fifth'] as const;
+    const sections = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'] as const;
     const refsAndScrollFns = sections.reduce((acc, section) => {
       const [ref, scrollToRef] = useRefAction();
       return {

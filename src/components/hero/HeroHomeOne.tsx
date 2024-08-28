@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from '@/shared/assets/img/hero_img_1.jpg';
+import { ScrollContext } from "@/app/providers/ScrollProvider";
+import { useContext } from "react";
 
 
 const hero_slider = [
@@ -26,6 +28,8 @@ const hero_slider = [
 
 
 export const HeroHomeOne = () => {
+  const context = useContext(ScrollContext);
+  const scrollToRefFirst = context?.scrollToRefFirst;
   return (
     <>
       <Swiper
@@ -61,7 +65,7 @@ export const HeroHomeOne = () => {
                     <div className="cs_height_65 cs_height_lg_40"></div>
                     <div className="cs_hero_btn_wrap">
                       <div className="cs_round_btn_wrap">
-                        <Link to="#target"
+                        <Link to="" onClick={scrollToRefFirst}
                           className="cs_hero_btn cs_round_btn btn-item"><span></span>
                           Все этапы
                         </Link>

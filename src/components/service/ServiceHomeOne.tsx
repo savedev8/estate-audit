@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import img from '@/shared/assets/img/hero_img_1.jpg';
+import { useContext } from "react";
+import { ScrollContext } from "@/app/providers/ScrollProvider";
 
 interface DataType {
   id: number;
@@ -54,18 +56,21 @@ const service_data: DataType[] = [
   {
     id: 8,
     title: `Приёмка квартиры`,
-    des: `Принимаем квартиру.`
+    des: `Принимаем квартиру.`,
+    link: `/blog-details`,
   },
 
 ]
 
 export const ServiceHomeOne = () => {
+  const context = useContext(ScrollContext);
+  const firstRef = context?.firstRef;
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
       <section className="cs_primary_bg position-relative" id="target">
         <div className="cs_height_150 cs_height_lg_60"></div>
-        <div className="container">
+        <div className="container" ref={firstRef}>
           <div className="cs_section_heading cs_style_1 cs_type_1 cs_color_1">
             <div className="cs_section_heading_text">
               <div className="cs_section_subtitle anim_div_ShowZoom">

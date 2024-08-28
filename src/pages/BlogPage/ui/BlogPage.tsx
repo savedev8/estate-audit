@@ -11,7 +11,7 @@ const next_data: CheckItemType = {
     title: "Все необходимые документы проверены?",
     text: "Перейдём к этапу №5",
     // поменять
-    link: '/blog', 
+    link: '/team-details', 
 }
 
 
