@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --env port=4200"
+    "start": "webpack serve --env port=4200",
+    "start:dev": "concurrently \"npm start\" \"npm run start:dev:server\"",
+    "start:dev:server": "node ./json-server/index.js",
+    "build:prod": "webpack --env mode=production",
+    "build:dev": "webpack --env mode=development"
   },
   "dependencies": {
     "@types/react-modal-video": "^1.2.3",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.2",
+    "concurrently": "^8.2.2",
     "gsap": "^3.12.5",
     "react": "^18",
     "react-18-image-lightbox": "^5.1.4",
@@ -47,6 +52,7 @@
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^9.0.2",
     "html-webpack-plugin": "^5.6.0",
+    "json-server": "^0.17.4",
     "mini-css-extract-plugin": "^2.9.0",
     "sass": "^1.77.6",
     "sass-loader": "^14.2.1",

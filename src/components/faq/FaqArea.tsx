@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ArrowIcon from './arrow-icon.svg';
 
 const faq_data = [
   {
@@ -60,7 +61,7 @@ export const FaqArea = () => {
       <div className="cs_height_100 cs_height_lg_60"></div>
 
       <div className="container">
-        <div className="cs_accordeon anim_div_ShowDowns">
+        <div className="cs_accordeon">
           {faq_data.map((item, i) =>
             <div key={i} 
             onClick={() => toggleAccordion(i)}
@@ -69,11 +70,12 @@ export const FaqArea = () => {
                 <p className="cs_accordion_title cs_m0" id={`heading${item.id}`}>
                   {item.question}
                 </p>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="30" style={{ transform: i === activeIndex ? 'rotate(-90deg)' : 'none' }}>
-                  <path style={{ fill: `#ffffff` }}
-                    d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
-                    data-name="Right" />
-                </svg>
+
+                <ArrowIcon  
+                width="30" height="30"
+                style={{ transform: i === activeIndex ? 'rotate(-90deg)' : 'none' }} 
+                />
+              
               </div>
 
               <div className={`cs_accordion_body ${i === activeIndex ? '' : 'd-none'}`}>

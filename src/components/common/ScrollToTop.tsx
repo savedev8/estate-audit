@@ -1,17 +1,15 @@
-"use client"
-import UseSticky from "@/hooks/UseSticky";
-import React, { useState, useEffect } from "react";
+import { useSticky } from "@/shared/lib/hooks/useSticky/useSticky";
+import { useState, useEffect } from "react";
 
-
-const ScrollToTop = () => {
-  const { sticky }: { sticky: boolean } = UseSticky();
+export const ScrollToTop = () => {
+  const { sticky }: { sticky: boolean } = useSticky();
 
   const [showScroll, setShowScroll] = useState(false);
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400) {
+    if (!showScroll && window.scrollY > 400) {
       setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 400) {
+    } else if (showScroll && window.scrollY <= 400) {
       setShowScroll(false);
     }
   };
@@ -36,5 +34,3 @@ const ScrollToTop = () => {
     </>
   );
 };
-
-export default ScrollToTop;
